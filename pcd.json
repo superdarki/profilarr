@@ -1,0 +1,48 @@
+{
+  "name": "Presetarr Combined Database",
+  "version": "2.0.0",
+  "description": "Merged Profilarr v2 database (Jojont54 FR + Dumpstarr). Colliding entities are namespaced per source ([FR] / [EN]) so every profile scores releases as its author intended; identical entities collapse.",
+  "arr_types": [
+    "radarr",
+    "sonarr"
+  ],
+  "dependencies": {
+    "https://github.com/Dictionarry-Hub/schema": "1.1.0"
+  },
+  "authors": [
+    {
+      "name": "taularr"
+    }
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/superdarki/profilarr",
+  "links": {
+    "homepage": "https://github.com/superdarki/profilarr"
+  },
+  "profilarr": {
+    "minimum_version": "2.0.0"
+  },
+  "tags": [
+    "french",
+    "fr",
+    "dumpstarr",
+    "anime",
+    "combined"
+  ],
+  "upstream": {
+    "fr": {
+      "repo": "https://github.com/Jojont54/Profilarr-database-french-regex",
+      "branch": "stable",
+      "sha": "8848c18f",
+      "namespace": " [FR]"
+    },
+    "dumpstarr": {
+      "repo": "https://github.com/Dumpstarr/Database",
+      "branch": "stable",
+      "sha": "2538857e",
+      "namespace": " [EN]"
+    },
+    "namespaced_custom_formats": 361,
+    "namespaced_regular_expressions": 1207
+  }
+}

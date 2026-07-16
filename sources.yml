@@ -1,0 +1,40 @@
+# presetarr-database — merge config
+#
+# Merges N Profilarr-v2 databases into one snapshot (ops/0.merged-snapshot.sql).
+# Sources are layered in list order (earlier = higher priority for the plain slot).
+#
+# Per source:
+#   alias         : short id (used in logs)
+#   repo / branch : upstream git source (its ops/*.sql chain is replayed on the schema)
+#   namespace     : suffix ALWAYS appended to every entity name of this source (after strip_suffix).
+#                   different content) with another source. Use null or "" for AT MOST
+#                   ONE source = it keeps plain names on collision (the "base"). Every
+#                   other colliding source is namespaced. Identical-content entities
+#                   collapse into a single plain entry regardless.
+#   strip_suffix  : (optional) removed from the end of every entity name of this source
+#                   before collision detection (e.g. Jojont54 profiles end in " FR").
+#
+# Here BOTH sources are namespaced (no null base) — FR profiles/CF get [FR], Dumpstarr
+# get [EN] — so nothing silently overwrites and both score as their authors intended.
+
+schema:
+  repo: https://github.com/Dictionarry-Hub/schema
+  ref: "1.1.0"
+
+sources:
+  - alias: fr
+    repo: https://github.com/Jojont54/Profilarr-database-french-regex
+    branch: stable
+    namespace: " [FR]"
+    strip_suffix: " FR"
+
+  - alias: dumpstarr
+    repo: https://github.com/Dumpstarr/Database
+    branch: stable
+    namespace: " [EN]"
+
+manifest:
+  name: "Presetarr Combined Database"
+  description: "Merged Profilarr v2 database (Jojont54 FR + Dumpstarr). Colliding entities are namespaced per source ([FR] / [EN]) so every profile scores releases as its author intended; identical entities collapse."
+  repository: "https://github.com/superdarki/profilarr"
+  tags: ["french", "fr", "dumpstarr", "anime", "combined"]

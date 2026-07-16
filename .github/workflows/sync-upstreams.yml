@@ -1,0 +1,66 @@
+name: Sync from upstreams
+
+# Rebuilds the merged Profilarr v2 database from the FR + Dumpstarr upstreams
+# and commits only when the output actually changed (deterministic build).
+
+on:
+  schedule:
+    - cron: "17 4 * * *"      # daily 04:17 UTC
+  workflow_dispatch: {}
+  push:
+    paths:
+      - "sources.yml"
+      - ".github/scripts/build_merged.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstreams
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Clone upstream sources
+        run: |
+          set -euo pipefail
+          rm -rf _sources && mkdir -p _sources
+          git clone --depth 1 -b 1.1.0  https://github.com/Dictionarry-Hub/schema.git                    _sources/schema
+          git clone --depth 1 -b stable https://github.com/Jojont54/Profilarr-database-french-regex.git   _sources/fr
+          git clone --depth 1 -b stable https://github.com/Dumpstarr/Database.git                         _sources/dumpstarr
+
+      - name: Build merged database
+        run: python3 .github/scripts/build_merged.py
+
+      - name: Clean source clones
+        run: rm -rf _sources
+
+      - name: Commit & push if changed
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A ops pcd.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          FR=$(python3 -c "import json;print(json.load(open('pcd.json'))['upstream']['fr']['sha'])")
+          DM=$(python3 -c "import json;print(json.load(open('pcd.json'))['upstream']['dumpstarr']['sha'])")
+          git commit -m "chore(sync): FR ${FR} + Dumpstarr ${DM}"
+          git push
