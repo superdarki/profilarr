@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 1.regular_expressions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: regular_expressions
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=2538857e(ns= [EN])
+-- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=7b82754d(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -833,7 +833,7 @@ INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH HD Bluray Tier 02 (Radarr) [EN]', '^(EA|HiDt|HiSD|iFT|NTb|QOQ|SA89|sbR)$', NULL, '');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH HD Bluray Tier 03 [EN]', '^(ATELiER|BHDStudio|hallowed|HiFi|HONE|LoRD|playHD|SPHD|W4NK3R)$', NULL, '');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH UHD Bluray Tier 01 [EN]', '^(CtrlHD|MainFrame|DON|W4NK3R)$', NULL, '');
-INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH UHD Bluray Tier 02 [EN]', '^(HiDt|HQMUX)$', NULL, '');
+INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH UHD Bluray Tier 02 [EN]', '^(HiDt|HQMUX|RandomBytes)$', NULL, '');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH UHD Bluray Tier 03 [EN]', '^(BHDStudio|hallowed|HONE|PTer|SPHD|WEBDV)$', NULL, '');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH WEB Tier 01 (Radarr) [EN]', '^(ABBIE|AJP69|APEX|PAXA|PEXA|XEPA|BLUTONiUM|BYNDR|CMRG|CRFW|CRUD|FLUX|GNOME|HONE|KiNGS|Kitsune|MADSKY|NOSiViD|NTb|NTG|RAWR|SiC|TEPES|TheFarm|ZoroSenpai)$', NULL, '');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('TRaSH WEB Tier 02 (Radarr) [EN]', '^(dB|Flights|MiU|monkee|MZABI|PHOENiX|playWEB|SbR|SMURF|TOMMY|XEBEC|4KBEC|CEBEX)$', NULL, '');
@@ -1130,7 +1130,7 @@ INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Rick and Morty S09 Banned Groups [EN]', '(?i)^rick[ ._-]+and[ ._-]+morty.*s09e05.*-(FLUX)\b', NULL, 'Targets specific episodes of S09 from groups that use the wrong release name.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('1080i [EN]', '\b(1080i)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('DUDU [EN]', '^(DUDU)$', NULL, NULL);
-INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('The Office (US) S09E23 Banned Groups [EN]', '(?i)^the[ ._-]+office[ ._-]+us[ ._-]+S09E23.*Extended.*-(FLUX)\b', NULL, 'Matches releases from season 9 of the extended version of The Office (US).');
+INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('The Office (US) S09 Extended Banned Groups [EN]', '(?i)^the[ ._-]+office[ ._-]+us[ ._-]+S09.*Extended.*-(FLUX)\b', NULL, 'Matches releases from season 9 of the extended version of The Office (US).');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('nekotan [EN]', '\b(nekotan)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Phineas and Ferb Banned Groups [EN]', '(?i)^phineas[ ._-]+and[ ._-]+ferb.*-(KAiZEN|PHOENiX)\b', NULL, 'Matches releases for the show Phineas and Ferb from groups that do not follow the TVDB ordering.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Pikanet128 [EN]', '^(Pikanet128)$', NULL, NULL);

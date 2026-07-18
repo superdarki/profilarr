@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=2538857e(ns= [EN])
+-- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=7b82754d(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -7473,7 +7473,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 [EN]', 'WEB Tier 03 (Sonarr)', 'TRaSH WEB Tier 03 (Sonarr) [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'Adventure Time S08', 'Adventure Time Season 8 Banned Groups [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'House Season 06', 'House Season 6 Banned Groups [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'The Office (US) S09', 'The Office (US) S09E23 Banned Groups [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'The Office (US) S09', 'The Office (US) S09 Extended Banned Groups [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Season Pack [EN]', 'Kitsune', 'Kitsune [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Season Pack [EN]', 'Release Name (Spaces)', 'Release Name (Spaces) [EN]');
 

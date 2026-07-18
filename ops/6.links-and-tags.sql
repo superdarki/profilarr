@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 6.links-and-tags.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_group_members, quality_profile_qualities, quality_profile_languages, quality_profile_custom_formats, quality_profile_tags, custom_format_tags, regular_expression_tags
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=2538857e(ns= [EN])
+-- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=7b82754d(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -5584,8 +5584,8 @@ INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('1080i [EN]', 'Banned');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('DUDU [EN]', 'Release Group');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('DUDU [EN]', 'Banned');
-INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('The Office (US) S09E23 Banned Groups [EN]', 'Banned');
-INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('The Office (US) S09E23 Banned Groups [EN]', 'Custom');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('The Office (US) S09 Extended Banned Groups [EN]', 'Banned');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('The Office (US) S09 Extended Banned Groups [EN]', 'Custom');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('nekotan [EN]', 'Release Group');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('nekotan [EN]', 'Anime');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('Phineas and Ferb Banned Groups [EN]', 'Banned');
