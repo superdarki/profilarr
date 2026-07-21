@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=7b82754d(ns= [EN])
+-- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=92c42edb(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -2973,7 +2973,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Missing (INTL) [FR]', 'Not tFR', 'release_group', 'all', 1, 1);
 
 -- [dumpstarr] custom_format_conditions
--- custom_format_conditions: 960 rows
+-- custom_format_conditions: 961 rows
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Stereo', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Not 3.0ch', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Not 4.0', 'release_title', 'all', 1, 1);
@@ -3934,6 +3934,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Season Pack [EN]', 'Season Pack', 'release_type', 'sonarr', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Season Pack [EN]', 'Kitsune', 'release_group', 'sonarr', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Season Pack [EN]', 'Release Name (Spaces)', 'release_title', 'sonarr', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Not Original Language [EN]', 'Not Original', 'language', 'all', 1, 0);
 
 -- [fr] condition_patterns
 -- condition_patterns: 2734 rows
@@ -7485,12 +7486,13 @@ INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_na
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French VFQ [FR]', 'Not Original', 'Original', 0);
 
 -- [dumpstarr] condition_languages
--- condition_languages: 5 rows
+-- condition_languages: 6 rows
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Anime Dual Audio [EN]', 'Japanese', 'Japanese', 0);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Anime Dual Audio [EN]', 'Chinese', 'Chinese', 0);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Anime Dual Audio [EN]', 'Korean', 'Korean', 0);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Not German or English [EN]', 'Not English', 'English', 0);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Not German or English [EN]', 'Not German', 'German', 0);
+INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Not Original Language [EN]', 'Not Original', 'Original', 0);
 
 -- [fr] condition_quality_modifiers
 -- condition_quality_modifiers: 2 rows
