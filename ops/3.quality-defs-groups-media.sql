@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 3.quality-defs-groups-media.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_api_mappings, radarr_quality_definitions, sonarr_quality_definitions, radarr_media_settings, sonarr_media_settings, radarr_naming, sonarr_naming, delay_profiles, quality_groups
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=92c42edb(ns= [EN])
+-- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=511c8846(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -341,7 +341,7 @@ INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES (
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('LQ 1080p [EN]', '720p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p [EN]', 'WEB-1080p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p [EN]', 'WEB-720p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p HQ [EN]', 'WEB-1080p');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p HQ [EN]', '1080p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 2160p [EN]', 'WEB-1080p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 2160p [EN]', 'WEB-2160p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 2160p [EN]', 'WEB-720p');
