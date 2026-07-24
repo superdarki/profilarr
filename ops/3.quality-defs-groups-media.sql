@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 3.quality-defs-groups-media.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_api_mappings, radarr_quality_definitions, sonarr_quality_definitions, radarr_media_settings, sonarr_media_settings, radarr_naming, sonarr_naming, delay_profiles, quality_groups
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=511c8846(ns= [EN])
+-- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=5e8d9b3d(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -154,34 +154,34 @@ INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min
 -- [dumpstarr] radarr_quality_definitions
 -- radarr_quality_definitions: 30 rows
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'BR-DISK', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-1080p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-2160p', 0, 0, 1990);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-1080p', 0, 0, 1999);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-2160p', 0, 0, 1999);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-480p', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-576p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-720p', 0, 0, 1990);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Bluray-720p', 0, 0, 1999);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'CAM', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'DVD', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'DVD-R', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'DVDSCR', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'HDTV-1080p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'HDTV-2160p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'HDTV-720p', 0, 0, 1990);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'HDTV-1080p', 0, 0, 1999);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'HDTV-2160p', 0, 0, 1999);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'HDTV-720p', 0, 0, 1999);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'REGIONAL', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Raw-HD', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Remux-1080p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Remux-2160p', 0, 0, 1990);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Remux-1080p', 0, 0, 1999);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Remux-2160p', 0, 0, 1999);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'SDTV', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'TELECINE', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'TELESYNC', 0, 0, 1990);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'Unknown', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBDL-1080p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBDL-2160p', 0, 0, 1990);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBDL-1080p', 0, 0, 1999);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBDL-2160p', 0, 0, 1999);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBDL-480p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBDL-720p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBRip-1080p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBRip-2160p', 0, 0, 1990);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBDL-720p', 0, 0, 1999);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBRip-1080p', 0, 0, 1999);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBRip-2160p', 0, 0, 1999);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBRip-480p', 0, 0, 1990);
-INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBRip-720p', 0, 0, 1990);
+INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WEBRip-720p', 0, 0, 1999);
 INSERT OR IGNORE INTO "radarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Radarr', 'WORKPRINT', 0, 0, 1990);
 
 -- [fr] sonarr_quality_definitions
@@ -211,28 +211,28 @@ INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min
 
 -- [dumpstarr] sonarr_quality_definitions
 -- sonarr_quality_definitions: 22 rows
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-1080p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-2160p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-480p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-576p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-720p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'DVD', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'HDTV-1080p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'HDTV-2160p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'HDTV-720p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Raw-HD', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Remux-1080p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Remux-2160p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'SDTV', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Unknown', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-1080p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-2160p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-480p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-720p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-1080p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-2160p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-480p', 0, 0, 990);
-INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-720p', 0, 0, 990);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-1080p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-2160p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-480p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-576p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Bluray-720p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'DVD', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'HDTV-1080p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'HDTV-2160p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'HDTV-720p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Raw-HD', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Remux-1080p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Remux-2160p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'SDTV', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'Unknown', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-1080p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-2160p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-480p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBDL-720p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-1080p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-2160p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-480p', 5, 0, 999);
+INSERT OR IGNORE INTO "sonarr_quality_definitions" ("name", "quality_name", "min_size", "max_size", "preferred_size") VALUES ('Sonarr', 'WEBRip-720p', 5, 0, 999);
 
 -- [fr] radarr_media_settings
 -- radarr_media_settings: 1 rows
@@ -332,7 +332,7 @@ INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES (
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p VOSTFR [FR]', 'WEB 720p');
 
 -- [dumpstarr] quality_groups
--- quality_groups: 21 rows
+-- quality_groups: 22 rows
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [EN]', '1080p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [EN]', '480p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [EN]', '720p');
@@ -342,6 +342,7 @@ INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES (
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p [EN]', 'WEB-1080p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p [EN]', 'WEB-720p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p HQ [EN]', '1080p');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 1080p HQ [EN]', '2160p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 2160p [EN]', 'WEB-1080p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 2160p [EN]', 'WEB-2160p');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Movies 2160p [EN]', 'WEB-720p');
