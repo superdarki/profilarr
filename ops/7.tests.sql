@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 7.tests.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_tests, test_entities, test_releases
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=5e8d9b3d(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=6586112b(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.

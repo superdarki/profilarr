@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 3.quality-defs-groups-media.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_api_mappings, radarr_quality_definitions, sonarr_quality_definitions, radarr_media_settings, sonarr_media_settings, radarr_naming, sonarr_naming, delay_profiles, quality_groups
--- schema e1c2bd73 | sources: fr=8848c18f(ns= [FR]); dumpstarr=5e8d9b3d(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=6586112b(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -281,55 +281,22 @@ INSERT OR IGNORE INTO "delay_profiles" ("name", "preferred_protocol", "usenet_de
 INSERT OR IGNORE INTO "delay_profiles" ("name", "preferred_protocol", "usenet_delay", "torrent_delay", "bypass_if_highest_quality", "bypass_if_above_custom_format_score", "minimum_custom_format_score") VALUES ('Default Delay', 'prefer_usenet', 60, 60, 0, 0, NULL);
 
 -- [fr] quality_groups
--- quality_groups: 48 rows
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Balanced [FR]', '1080p Balanced');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Balanced [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Balanced [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Compact [FR]', '1080p Compact');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Compact [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Compact [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Efficient [FR]', '1080p Efficient');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Efficient [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Efficient [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality [FR]', '1080p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality HDR [FR]', '1080p Quality HDR');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality HDR [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality HDR [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Remux [FR]', '1080p Remux');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Remux [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Remux [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Balanced [FR]', '1080p Quality HDR');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Balanced [FR]', '2160p Balanced');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Balanced [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Balanced [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Compact [FR]', '1080p Balanced');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Compact [FR]', '2160p Compact');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Compact [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Compact [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Efficient [FR]', '1080p Efficient');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Efficient [FR]', '2160p Efficient');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Efficient [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Efficient [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Quality [FR]', '1080p Quality HDR');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Quality [FR]', '2160p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Quality [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Quality [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Remux [FR]', '1080p Remux');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Remux [FR]', '2160p Remux');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Remux [FR]', '480p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Remux [FR]', '720p Quality');
+-- quality_groups: 15 rows
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Balanced [FR]', '1080p Balanced FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Compact [FR]', '1080p Compact FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Efficient [FR]', '1080p Efficient FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality [FR]', '1080p Quality FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Quality HDR [FR]', '1080p Quality HDR FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('1080p Remux [FR]', '1080p Remux FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Balanced [FR]', '2160p Balanced FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Compact [FR]', '2160p Compact FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Efficient [FR]', '2160p Efficient FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Quality [FR]', '2160p Quality FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('2160p Remux [FR]', '2160p Remux FR');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('720p Quality [FR]', '480p Quality');
 INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('720p Quality [FR]', '720p Quality');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [FR]', 'Bluray/REMUX 1080p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [FR]', 'WEB 1080p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [FR]', 'WEB 480p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [FR]', 'WEB 720p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p VOSTFR [FR]', 'Bluray/REMUX 1080p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p VOSTFR [FR]', 'WEB 1080p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p VOSTFR [FR]', 'WEB 480p');
-INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p VOSTFR [FR]', 'WEB 720p');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p [FR]', 'Anime 1080p FR');
+INSERT OR IGNORE INTO "quality_groups" ("quality_profile_name", "name") VALUES ('Anime 1080p VOSTFR [FR]', 'Anime 1080p VOSTFR FR');
 
 -- [dumpstarr] quality_groups
 -- quality_groups: 22 rows
