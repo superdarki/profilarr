@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 7.tests.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_tests, test_entities, test_releases
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=bc481e64(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=623c2619(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -9,7 +9,7 @@
 PRAGMA foreign_keys = OFF;
 
 -- [dumpstarr] custom_format_tests
--- custom_format_tests: 10 rows
+-- custom_format_tests: 9 rows
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('Baseline Groups [EN]', 'Deadpool.2.2018.2160p.DSNP.WEB-DL.DDPA.5.1.DV.HDR.H.265-PiRaTeS', 'movie', 1, NULL);
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('HONE (Bad Name) [EN]', 'Star Wars Episode III-Revenge of the Sith-2005-2160p UHD BluRay x265 DV HDR DDP 7.1 English-DiscoD HONE-', 'movie', 1, NULL);
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('HONE (Bad Name) [EN]', 'Star Wars Episode III-Revenge of the Sith-2005-2160p UHD BluRay x265 DV HDR DDP 7.1 English-HONE', 'movie', 0, NULL);
@@ -17,7 +17,6 @@ INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "typ
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('HONE (Bad Name) [EN]', 'Star Wars Episode III-Revenge of the Sith-2005-2160p UHD BluRay x265 DV HDR DDP 7.1 English-HONE-REPACK-', 'movie', 1, NULL);
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('HONE (Bad Name) [EN]', 'Star Wars Episode III-Revenge of the Sith-2005-2160p UHD BluRay x265 DV HDR DDP 7.1 English-DarQ HONE', 'movie', 1, NULL);
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('HONE (Bad Name) [EN]', 'How to Train Your Dragon (2010) (2160p UHD BluRay x265 DV HDR10+ DDP 7.1 English - DarQ HONE)', 'movie', 1, NULL);
-INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('Dumpstarr LQ Groups [EN]', 'Scrubs.S01E15.My.Bed.Banter.Beyond.Upscale.Hybrid.1080p.WEBRip.DD2.0.H.264-DEADBADUGLY', 'series', 1, NULL);
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('Dumpstarr LQ Title [EN]', 'Scrubs.S01E09.2026.1080p.DSNP.WEB-DL.DDP5.1.H.264-HDSWEB', 'series', 1, NULL);
 INSERT OR IGNORE INTO "custom_format_tests" ("custom_format_name", "title", "type", "should_match", "description") VALUES ('Dumpstarr LQ Title [EN]', 'Scrubs.2026.S01E01.My.Return.1080p.DSNP.WEB-DL.DDP5.1.H.264-FLUX', 'series', 0, NULL);
 

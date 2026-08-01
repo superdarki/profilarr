@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=bc481e64(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=623c2619(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -2570,7 +2570,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Missing (INTL) [FR]', 'Not French MultiSub + Team FR (INTL)', 'release_title', 'all', 1, 1);
 
 -- [dumpstarr] custom_format_conditions
--- custom_format_conditions: 932 rows
+-- custom_format_conditions: 933 rows
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Stereo', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Not 3.0ch', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Not 4.0', 'release_title', 'all', 1, 1);
@@ -3269,16 +3269,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'Scrubs 2001', 'release_title', 'sonarr', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'The Big Bang Theory', 'release_title', 'sonarr', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('TVE [EN]', 'Spider-Noir Authentic B&W', 'release_title', 'sonarr', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'Reza', 'release_title', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'VARYG', 'release_title', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'Asenshi-MTBB', 'release_title', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'MCR', 'release_title', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'SEV', 'release_title', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'WADU', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'The Office Superfans', 'release_title', 'sonarr', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'FIEND', 'release_group', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'T3KASHi', 'release_group', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'Tsundere-Raws', 'release_title', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('LQ Release Title [EN]', 'R&H', 'release_title', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('LQ Release Title [EN]', 'UnKn0wn (NoRemux)', 'release_title', 'radarr', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('LQ Release Title [EN]', 'GalaxyRG', 'release_title', 'radarr', 0, 0);
@@ -3342,7 +3333,6 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups [EN]', 'TARDiS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups [EN]', 'Tofu4U', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'LQ Sources', 'release_title', 'radarr', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'GGEZ', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('x265 [EN]', 'x265', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'Rick and Morty S09', 'release_title', 'sonarr', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', '1080i', 'release_title', 'all', 0, 0);
@@ -3503,6 +3493,17 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Not Original Language [EN]', 'Not Original', 'language', 'all', 1, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Baseline Groups [EN]', 'edge2020', 'release_group', 'sonarr', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('TheFarm [EN]', 'TheFarm', 'release_group', 'radarr', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups [EN]', 'FIEND', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups [EN]', 'GGEZ', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups [EN]', 'T3KASHi', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Groups [EN]', 'WADU', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title [EN]', 'Asenshi-MTBB', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title [EN]', 'MCR', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title [EN]', 'Reza', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title [EN]', 'SEV', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title [EN]', 'Tsundere-Raws', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dumpstarr LQ Title [EN]', 'VARYG', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'Courage the Cowardly Dog', 'release_title', 'sonarr', 0, 0);
 
 -- [fr] condition_patterns
 -- condition_patterns: 2331 rows
@@ -5839,7 +5840,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French Missing (INTL) [FR]', 'Not French MultiSub + Team FR (INTL)', 'French MultiSub + Team FR Marker (INTL) [FR]');
 
 -- [dumpstarr] condition_patterns
--- condition_patterns: 789 rows
+-- condition_patterns: 790 rows
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2.0 Stereo [EN]', 'Stereo', 'Stereo [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2.0 Stereo [EN]', 'Not 3.0ch', 'Not 3.0ch [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2.0 Stereo [EN]', 'Not 4.0', 'Not 4.0ch [EN]');
@@ -6400,16 +6401,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'Scrubs 2001', 'Scrubs 2001 Approved Groups [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'The Big Bang Theory', 'The Big Bang Theory Banned Groups [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('TVE [EN]', 'Spider-Noir Authentic B&W', 'Spider-Noir Authentic B&W [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'Reza', 'Reza [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'VARYG', 'VARYG [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'Asenshi-MTBB', 'Asenshi-MTBB [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'MCR', 'MCR [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'SEV', 'SEV [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'WADU', 'WADU [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'The Office Superfans', 'The Office (US) Superfans Episodes [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'FIEND', 'FIEND [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'T3KASHi', 'T3KASHi [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'Tsundere-Raws', 'Tsundere-Raws [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('LQ Release Title [EN]', 'R&H', 'R&H [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('LQ Release Title [EN]', 'UnKn0wn (NoRemux)', 'UnKn0wn (NoRemux) [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('LQ Release Title [EN]', 'GalaxyRG', 'GalaxyRG [EN]');
@@ -6471,7 +6463,6 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups [EN]', 'TARDiS', 'TARDiS [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups [EN]', 'Tofu4U', 'Tofu4U [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'LQ Sources', 'LQ Sources [EN]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'GGEZ', 'GGEZ [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 [EN]', 'x265', 'x265 [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'Rick and Morty S09', 'Rick and Morty S09 Banned Groups [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', '1080i', '1080i [EN]');
@@ -6629,6 +6620,17 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'The Office (US) S09', 'The Office (US) S09 Extended Banned Groups [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Baseline Groups [EN]', 'edge2020', 'edge2020 [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('TheFarm [EN]', 'TheFarm', 'TheFarm [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups [EN]', 'FIEND', 'FIEND [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups [EN]', 'GGEZ', 'GGEZ [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups [EN]', 'T3KASHi', 'T3KASHi [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Groups [EN]', 'WADU', 'WADU [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title [EN]', 'Asenshi-MTBB', 'Asenshi-MTBB [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title [EN]', 'MCR', 'MCR [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title [EN]', 'Reza', 'Reza [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title [EN]', 'SEV', 'SEV [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title [EN]', 'Tsundere-Raws', 'Tsundere-Raws [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dumpstarr LQ Title [EN]', 'VARYG', 'VARYG [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'Courage the Cowardly Dog', 'Courage the Cowardly Dog Banned Groups [EN]');
 
 -- [fr] condition_languages
 -- condition_languages: 3 rows

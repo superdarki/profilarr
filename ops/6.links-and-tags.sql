@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 6.links-and-tags.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_group_members, quality_profile_qualities, quality_profile_languages, quality_profile_custom_formats, quality_profile_tags, custom_format_tags, regular_expression_tags
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=bc481e64(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=623c2619(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -2178,7 +2178,7 @@ INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", 
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('720p Quality [FR]', 'IMAX [FR]', 'all', 0);
 
 -- [dumpstarr] quality_profile_custom_formats
--- quality_profile_custom_formats: 462 rows
+-- quality_profile_custom_formats: 443 rows
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'Accessibility [EN]', 'all', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Multi-Audio [EN]', 'all', 101);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Multi-Sub [EN]', 'all', 101);
@@ -2539,23 +2539,6 @@ INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", 
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Dumpstarr LQ Title [EN]', 'sonarr', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Anime Baseline Groups [EN]', 'radarr', 100);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Anime Baseline Groups [EN]', 'sonarr', 100);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'radarr', -100);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'sonarr', -100);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'radarr', -10);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'sonarr', -10);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'radarr', -500);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 2160p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'radarr', -1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 2160p HQ [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'radarr', -500);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('TV 1080p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'sonarr', -1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('TV 2160p [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'sonarr', -1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('TV 1080p [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'sonarr', -1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('TV 2160p [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'sonarr', -1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 2160p [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'radarr', -1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 2160p HQ [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'radarr', -1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'radarr', -500);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'radarr', -10);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'radarr', -100);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'sonarr', -100);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('TV 1080p [EN]', 'Group Missing [EN]', 'sonarr', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('TV 2160p [EN]', 'Group Missing [EN]', 'sonarr', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 2160p HQ [EN]', 'Group Missing [EN]', 'radarr', -10000);
@@ -2610,9 +2593,7 @@ INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", 
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Dolby Vision [EN]', 'radarr', 100);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Dolby Vision (No HDR Fallback) [EN]', 'radarr', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Dumpstarr LQ Groups [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Dumpstarr LQ Groups (Automation) [EN]', 'radarr', -1000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Dumpstarr LQ Title [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Dumpstarr LQ Title (Automation) [EN]', 'radarr', -500);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Extras [EN]', 'radarr', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Fake HDR [EN]', 'radarr', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 1080p HQ [EN]', 'Group Missing [EN]', 'radarr', -10000);
@@ -3242,7 +3223,7 @@ INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VA
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('French Missing (INTL) [FR]', 'Banned');
 
 -- [dumpstarr] custom_format_tags
--- custom_format_tags: 233 rows
+-- custom_format_tags: 231 rows
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('2.0 Stereo [EN]', 'Audio');
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('2.0 Stereo [EN]', 'Channel Count');
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('3D [EN]', 'Banned');
@@ -3471,8 +3452,6 @@ INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VA
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('Bad Dual Groups [EN]', 'TRaSH');
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('Bad Dual Groups [EN]', 'Banned');
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('PBSK [EN]', 'Streaming Service');
-INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('Dumpstarr LQ Title (Automation) [EN]', 'Banned');
-INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', 'Banned');
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('Not German or English [EN]', 'Language');
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('x265 [EN]', 'Codec');
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('TheFarm [EN]', 'Release Group');
@@ -4817,7 +4796,7 @@ INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('French MultiSub + Team FR Marker (INTL) [FR]', 'Language');
 
 -- [dumpstarr] regular_expression_tags
--- regular_expression_tags: 1387 rows
+-- regular_expression_tags: 1392 rows
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('1XBET [EN]', 'Banned');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('1XBET [EN]', 'Release Group');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('3D [EN]', 'Banned');
@@ -6205,4 +6184,9 @@ INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('JFF [EN]', 'Release Group');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('JFF [EN]', 'Banned');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('edge2020 [EN]', 'Release Group');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('ReiDoBregaBR [EN]', 'Release Group');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('SKYFiRE [EN]', 'Release Group');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('Reaperza [EN]', 'Release Group');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('Courage the Cowardly Dog Banned Groups [EN]', 'Banned');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('Courage the Cowardly Dog Banned Groups [EN]', 'Custom');
 

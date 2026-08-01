@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=bc481e64(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=623c2619(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -256,7 +256,7 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing (INTL) [FR]', 'Matches INTL releases without a trusted French MULTi/MultiSub marker, French release group, VF, VOSTFR, VFQ or French original marker.', 0);
 
 -- [dumpstarr] custom_formats
--- custom_formats: 148 rows
+-- custom_formats: 146 rows
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2.0 Stereo [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('3D [EN]', 'Matches the ''3D'' Regex Pattern', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('4K Remaster [EN]', '', 0);
@@ -404,8 +404,6 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('DSCP [EN]', 'Discovery+ (pronounced "Discovery Plus"; stylized as discovery+) is an American subscription video on-demand over-the-top streaming service owned by Warner Bros. Discovery (WBD). The service focuses on factual programming drawn from the libraries of Discovery''s main channel brands, as well as original series (including spin-offs of programs from Discovery''s television networks), and other acquired content.', 1);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Bad Dual Groups [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('PBSK [EN]', 'Matches releases from the PBS Kids channel.', 1);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Dumpstarr LQ Title (Automation) [EN]', '', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Dumpstarr LQ Groups (Automation) [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Not German or English [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('x265 [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Season Pack [EN]', '', 0);

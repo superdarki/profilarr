@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 4.quality_profiles.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_profiles
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=bc481e64(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=623c2619(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -108,7 +108,7 @@ avec des fichiers plus legers.
 
 -- [dumpstarr] quality_profiles
 -- quality_profiles: 8 rows
-INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('LQ 1080p [EN]', '- This profile is for **SIDCA** (Sh*t I Don''t Care About). The primary tier and LQ groups are not scored to allow "low quality" releases. For example, user requests "Keeping Up with the Kardashians" and you would prefer to save as much storage space as humanly possible so this user can watch this "show".
+INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('LQ 1080p [EN]', '- This profile is for **SIDCA** (Sh*t I Don''t Care About). The primary tier and LQ groups are not scored to allow "low quality" releases. For example, user requests "Keeping Up with the Kardashians" and you would prefer to save as much storage space as humanly possible so this user can watch this "show". This profile works great on animated series.
 - You can expect to grab **MeGusta** or **iVy** releases 99% of the time.
 - AV1 and x265 codecs are allowed.', 1, 25, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p [EN]', 'Based on the TRaSH Guides Anime Profile, focusing on media that has Dual Audio.
