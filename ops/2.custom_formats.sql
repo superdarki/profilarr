@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=649f43ce(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=c0c0ca45(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -256,7 +256,7 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing (INTL) [FR]', 'Matches INTL releases without a trusted French MULTi/MultiSub marker, French release group, VF, VOSTFR, VFQ or French original marker.', 0);
 
 -- [dumpstarr] custom_formats
--- custom_formats: 146 rows
+-- custom_formats: 147 rows
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2.0 Stereo [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('3D [EN]', 'Matches the ''3D'' Regex Pattern', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('4K Remaster [EN]', '', 0);
@@ -409,4 +409,5 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Season Pack [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Not Original Language [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('TheFarm [EN]', '', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('ProRes [EN]', 'Apple ProRes is a high-quality, lossy intra-frame video codec family developed by Apple. It compresses every video frame individually rather than across frames, making it an industry standard for professional video editing, color grading, and broadcasting due to its minimal quality loss during multi-generation editing.', 0);
 
