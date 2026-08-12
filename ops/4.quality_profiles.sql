@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 4.quality_profiles.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_profiles
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=5b6175af(ns= [EN])
+-- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=e4e604cd(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -114,34 +114,28 @@ INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allow
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p [EN]', 'Based on the TRaSH Guides Anime Profile, focusing on media that has Dual Audio.
 - This profile will grab between a SDTV - 1080p Bluray file.
 - You will be preferring Dual Audio media (ie including English along with original language). If you''d prefer to **only** have the original language (Japanese), remove the Dual Audio format and set your language preference in this profile.
-- If you''d prefer to always grab Dual Audio releases, change the Dual Audio format score from 101 to 500', 1, 0, 10000, 1);
+- Dual Audio releases are always preferred.', 1, 0, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Movies 1080p [EN]', 'This profile focuses on streaming optimized sources with little to no transcoding needed and is recommended for the average user or if you **do not** use a dedicated streaming box. (i.e. AppleTV, NVIDIA Shield, etc)
-- This profile is recommended for a set-it-and-forget-it setup.
 - This profile will prefer streaming optimized releases groups like **BHDStudio** and **hallowed**.
 - This profile does not allow releases with HD Audio to ensure direct-play compatibility.', 1, 750, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Movies 2160p [EN]', 'This profile focuses on streaming optimized sources with little to no transcoding needed and is recommended for the average user or if you **do not** use a dedicated streaming box. (i.e. AppleTV, NVIDIA Shield, etc)
-- This profile is recommended for a set-it-and-forget-it setup.
 - This profile will prefer streaming optimized releases groups like **BHDStudio** and **hallowed**.
 - This profile does not allow releases with HD Audio to ensure direct-play compatibility.
 - Releases without HDR fallback will be scored negatively to ensure playability across platforms.', 1, 1000, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Movies 2160p HQ [EN]', 'This profile follows the same sort of logic like the TRaSH SQP-4 MA Hybrid Profile. This results in higher-quality, WEB releases being preferred. This usually results in higher-quality audio, higher video bitrates and 30% larger file size.
-- This profile is recommended for a set-it-and-forget-it setup.
 - This profile prefers releases sources from MA (Movies Anywhere).
 - This profile prefers 4K releases with **HDR** and **Dolby Vision**.
 - This profile will allow HD audio like TrueHD, DTS-X, etc but only if the source is WEB-DL.
 - Releases **without** HDR fallback are not allowed.', 1, 500, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('TV 1080p [EN]', 'Based on the TRaSH Guides WEB-1080p (Alternative) profile, focusing on balanced quality/file size.
-- This profile is recommended for a set-it-and-forget-it setup.
 - x265/HEVC is **allowed** but not preferred on this profile, so some transcoding is possible if your client **does not** support x265/HEVC.
 - Uncensored versions will be preferred while extended/special versions will be used as fallback.', 1, 0, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('TV 2160p [EN]', 'Based on the TRaSH Guides WEB-2160p (Alternative) profile, focusing on balanced quality/file size.
-- This profile is recommended for a set-it-and-forget-it setup.
 - This profile will **prefer** releases with HDR or Dolby Vision.
 - x265/HEVC is **allowed** on this profile, so some transcoding is possible if your client **does not** support x265/HEVC.
 - Uncensored versions will be preferred while extended/special versions will be used as fallback.
 - Releases **without** HDR fallback are not allowed.', 1, 0, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Movies 1080p HQ [EN]', 'This profile follows the same sort of logic like the TRaSH SQP-4 MA Hybrid Profile. This results in higher-quality, WEB releases being preferred. This usually results in higher-quality audio, higher video bitrates and 30% larger file size.
-- This profile is recommended for a set-it-and-forget-it setup.
 - This profile prefers releases sources from MA (Movies Anywhere).
 - This profile allows releases with **HDR** and **Dolby Vision**.
 - This profile will allow HD audio like TrueHD, DTS-X, etc but only if the source is WEB-DL.
