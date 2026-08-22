@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 4.quality_profiles.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_profiles
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=ed451ed1(ns= [EN])
+-- schema e1c2bd73 | sources: fr=bef96006(ns= [FR]); dumpstarr=ed451ed1(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -86,18 +86,20 @@ pour cibler des encodes x264 720p **transparents**.
 - Classement qualite film ~ 5/10
 - Taille moyenne serie ~ 2 a 4 Go par episode
 - Classement qualite serie ~ 5/10', 1, 20000, 1000000, 1);
-INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p [FR]', 'Anime 1080p FR cible les releases anime taguees en francais tout en conservant
-la logique de tiers anime de Dictionarry.
+INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p [FR]', 'Anime 1080p FR cible des releases anime 1080p de qualité en combinant
+les sources techniques de Dictionarry avec les tiers de teams Anime FR.
 
-- Priorise MULTi, puis VOSTFR, puis VF
-- Rejette VFQ, les groupes FR de faible qualite et les releases sans marqueur francais explicite
-- Utilise les tiers anime FR de la base', 1, 0, 101000, 1);
-INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p VOSTFR [FR]', 'Anime 1080p VOSTFR FR cible uniquement les releases anime en version originale sous-titree francaise tout en conservant
-la logique de tiers anime de Dictionarry.
+- Priorise MULTi / French Original, puis VOSTFR, puis VF
+- Accepte les encodes anime HEVC/x265 et HDR
+- Rejette VFQ, les groupes de faible qualité et les releases sans marqueur français explicite
+- Utilise une échelle maximale de 1 000 000 points comme les autres profils FR', 1, 20000, 1000000, 1);
+INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p VOSTFR [FR]', 'Anime 1080p VOSTFR FR reprend le même socle technique et les mêmes
+tiers de teams que le profil Anime 1080p FR, mais impose strictement la VOSTFR.
 
-- Accepte VOSTFR uniquement
-- Rejette MULTi, VF, VFQ, les groupes FR de faible qualite et les releases sans marqueur francais explicite
-- Utilise les tiers anime FR de la base', 1, 0, 101000, 1);
+- Accepte uniquement les releases détectées VOSTFR
+- Accepte les encodes anime HEVC/x265 et HDR
+- Rejette MULTi, VF, VFQ, French Original et les releases sans marqueur français explicite
+- Utilise une échelle maximale de 1 000 000 points comme les autres profils FR', 1, 20000, 1000000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('2160p Compact [FR]', '2160p Compact FR cible des encodes BluRay x265 de type 4K Light,
 avec des fichiers plus legers.
 

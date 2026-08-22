@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=ed451ed1(ns= [EN])
+-- schema e1c2bd73 | sources: fr=bef96006(ns= [FR]); dumpstarr=ed451ed1(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -87,7 +87,7 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 03 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing [FR]', 'Rejects releases without an explicit French MULTi, French Original, VF, VOSTFR, or VFQ marker.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing [FR]', 'Rejects releases without detected French audio or an explicit French MULTi, French Original, VF, VOSTFR, or VFQ marker.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi [FR]', 'Prioritizes French MULTi releases without also matching VFQ or VOSTFR.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Original Marker [FR]', 'Priorise les releases marquees VOF ou VOQ comme version originale francophone.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French VF [FR]', 'Prioritizes French dubbed releases when they are not MULTi, VOSTFR, or VFQ.', 0);
@@ -253,7 +253,7 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi + Marker FR (INTL) [FR]', 'Matches INTL MULTi releases only when MULTi is followed by an explicit French marker. Useful on international trackers where MULTi alone does not guarantee French audio.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Matches INTL MultiSub releases only when MultiSub is present and the release group is one of the known French teams.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MultiSub + Marker FR (INTL) [FR]', 'Matches INTL MultiSub releases only when MultiSub is followed by an explicit French marker. Useful on international trackers where MultiSub alone does not guarantee French subtitles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing (INTL) [FR]', 'Matches INTL releases without a trusted French MULTi/MultiSub marker, French release group, VF, VOSTFR, VFQ or French original marker.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing (INTL) [FR]', 'Matches INTL releases without detected French audio or a trusted French MULTi/MultiSub marker, French release group, VF, VOSTFR, VFQ or French original marker.', 0);
 
 -- [dumpstarr] custom_formats
 -- custom_formats: 144 rows

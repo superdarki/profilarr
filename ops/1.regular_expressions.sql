@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 1.regular_expressions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: regular_expressions
--- schema e1c2bd73 | sources: fr=aa75ec2e(ns= [FR]); dumpstarr=ed451ed1(ns= [EN])
+-- schema e1c2bd73 | sources: fr=bef96006(ns= [FR]); dumpstarr=ed451ed1(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -172,7 +172,7 @@ INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('French MULTi [FR]', '(?i)(?<=^|[\s.-])(?:MULTI(?:[ ._-]?(?:FR|FRA|FRENCH|FRANCAIS|FRANÇAIS|TRUE[ ._-]?FR(?:ENCH)?|VF|VFI|VFF|VFQ|VFB|VOF|VOQ|VF2|VFQ2|VFF2|VFI2|\d+))?|FR\s*\+\s*[A-Z]{2}|[A-Z]{2}\s*\+\s*FR)(?![ ._-]?SUBS?)(?=$|[\s.-])', NULL, 'Matches French scene-style MULTi releases, including MULTi.FR/FRENCH/TRUEFRENCH variants, and FR+XX language-pair tags.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('French VF [FR]', '(?i)(?<=^|[\s.-])(?:VF(?!Q)|VFI|VFF2?|VF2|TRUE[ ._-]?FR(?:ENCH)?|FRENCH(?![ ._-]?(?:SUBS?|CANADIAN))|FRANCAIS|FRANÇAIS|FRA)(?=$|[\s.-])', NULL, 'Matches French dubbed releases while keeping subtitles, MULTi, and Quebec French variants separate.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('French Original Marker [FR]', '(?i)(?<=^|[\s.-])(?:VOF|VOQ)(?=$|[\s.-])', NULL, 'Matches French original-version markers VOF and VOQ.');
-INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('French VFQ [FR]', '(?i)(?<=^|[\s.-])(?:VFQ2?|VQ|FRENCH[ ._-]?CANADIAN|CANADIAN[ ._-]?FRENCH|QUEBECOIS)(?=$|[\s.-])', NULL, 'Matches Quebec French variants that should be rejected by French profiles.');
+INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('French VFQ [FR]', '(?i)(?<=^|[\s.-])(?:VFQ2?|VQ|(?:MULTI|FRENCH)[ ._-]+CA|FRENCH[ ._-]?CANADIAN|CANADIAN[ ._-]?FRENCH|QUEBECOIS)(?=$|[\s.-])', NULL, 'Matches Quebec or Canadian French markers that should be rejected by French profiles, including MULTi.CA and FRENCH.CA.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('French VOSTFR [FR]', '(?i)(?<=^|[\s.-])(?:VOST(?:[ ._-]?FR)?|SUB[ ._-]?(?:FR|FRENCH)|FRENCH[ ._-]?SUBS?|FR[ ._-]?SUBS?)(?=$|[\s.-])', NULL, 'Matches original-audio releases with French subtitles.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('FRENCHDEADPOOL2 [FR]', '(?<=^|[\s.-])FRENCHDEADPOOL2\b', NULL, 'Matches "FRENCHDEADPOOL2" when preceded by whitespace, a hyphen or dot');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('FrIeNdS [FR]', '(?<=^|[\s.-])FrIeNdS\b', NULL, 'Matches "FrIeNdS" when preceded by whitespace, a hyphen or dot');
