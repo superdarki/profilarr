@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 1.regular_expressions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: regular_expressions
--- schema e1c2bd73 | sources: fr=65455544(ns= [FR]); dumpstarr=96ae7394(ns= [EN])
+-- schema e1c2bd73 | sources: fr=65455544(ns= [FR]); dumpstarr=cd91b0b3(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -1056,7 +1056,7 @@ INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('The Office (US) Banned Groups [EN]', '(?i)^the[ ._-]+office.*2005.*-.*\(?(HONE)\)?$', NULL, 'Negates certain groups that cause import/automation issues with The Office (US).');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('HHWEB (No MA) [EN]', '^(?!.*\bMA\b.*\bWEB-?DL\b).*\b(HHWEB)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Family Guy Banned Groups [EN]', '(?i)^family[ ._-]+guy.*-(REWARD)\b', NULL, 'Negates certain groups that are in PAL format (25 fps).');
-INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Scrubs 2001 Approved Groups [EN]', '(?i)\bScrubs\b(?![.\s(]*2026)(?!.*-(BoOk|BMF|DBTV|DEFiANCE|FoV|GAMEOVER|NTROPiC-FTP|SiNNERS|WELP)(\b|$)).*', NULL, 'Matches any group not in the list one the 2001 version of Scrubs.');
+INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Scrubs 2001 Approved Groups [EN]', '(?i)\bScrubs\b(?![.\s(]*2026)(?!.*-(BoOk|BMF|CMCTV|DBTV|DEFiANCE|FoV|GAMEOVER|HHWEB|NTROPiC-FTP|PlayWEB|SiNNERS|THESYNDiCATE|TURG|WELP)(\b|$)).*', NULL, 'Matches any group not in the list one the 2001 version of Scrubs.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Scrubs 2001 Boost [EN]', '(?i)\bScrubs\b(?!.*2026)(?=.*(REMUX|INTERNAL))', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('UnKn0wn (NoRemux) [EN]', '(?<!\b(remux).*?)\b(unkn0wn)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('SkyShowTime [EN]', '\b(SKST)\b', NULL, 'SkyShowtime is a European joint-venture between Comcast and Paramount Skydance Corporation which combines programming from Peacock and Paramount+ as well as Sky Studios');
