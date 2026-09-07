@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 4.quality_profiles.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_profiles
--- schema e1c2bd73 | sources: fr=65455544(ns= [FR]); dumpstarr=621aa69b(ns= [EN])
+-- schema e1c2bd73 | sources: fr=4608d601(ns= [FR]); dumpstarr=621aa69b(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.

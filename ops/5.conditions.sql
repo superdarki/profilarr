@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=65455544(ns= [FR]); dumpstarr=621aa69b(ns= [EN])
+-- schema e1c2bd73 | sources: fr=4608d601(ns= [FR]); dumpstarr=621aa69b(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -9,7 +9,7 @@
 PRAGMA foreign_keys = OFF;
 
 -- [fr] custom_format_conditions
--- custom_format_conditions: 2562 rows
+-- custom_format_conditions: 2589 rows
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', '1080p', 'resolution', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Bluray', 'source', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Not Remux', 'release_title', 'all', 1, 1);
@@ -365,7 +365,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'LMPS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'LNA3d', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'MACK4', 'release_group', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'MeMyl', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'MeMyI', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'METALLIKA', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'MGD', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'Moorea81', 'release_group', 'all', 0, 0);
@@ -508,12 +508,14 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'BRiNK', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'BTT', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'CARAPiLS', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'Caribou', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'CiELOS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'CiNEMA', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'CMBHD', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'CoRa', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'COUAC', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'CRYPT0', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'CUSThOMe', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'D4KiD', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'DEAL', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'DiEBEX', 'release_group', 'all', 0, 0);
@@ -537,6 +539,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'HERC', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'HiggsBoson', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'HiRoSHiMa', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'HOLiDAYS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'HYBRiS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'HyDe', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'JMT', 'release_group', 'all', 0, 0);
@@ -681,10 +684,8 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Missing [FR]', 'Original Except', 'language', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi [FR]', 'French MULTi', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi [FR]', 'Not French VFQ', 'release_title', 'all', 1, 1);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi [FR]', 'Not French VOSTFR', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French VF [FR]', 'French VF', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French VF [FR]', 'Not French MULTi', 'release_title', 'all', 1, 1);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French VF [FR]', 'Not French VOSTFR', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French VF [FR]', 'Not French VFQ', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French VF [FR]', 'Not French Original Marker', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French VFQ [FR]', 'French VFQ', 'release_title', 'all', 0, 1);
@@ -833,6 +834,25 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Xvid [FR]', 'Xvid', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Xvid [FR]', 'Not DVD', 'source', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Xvid [FR]', 'Not HDTV', 'source', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('CAM [FR]', 'CAM', 'release_title', 'radarr', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('ATV [FR]', 'ATV Regex', 'release_title', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('ATV [FR]', 'WEB-DL', 'source', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('ATV [FR]', 'WEBRip', 'source', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('HBO [FR]', 'WEB-DL', 'source', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('HBO [FR]', 'WEBRip', 'source', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('HBO [FR]', 'HBO Regex', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('HBO [FR]', 'HBO Rename Regex', 'release_title', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('DSCP [FR]', 'DSCP Regex', 'release_title', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('DSCP [FR]', 'WEB-DL', 'source', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('DSCP [FR]', 'WEBRip', 'source', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SDR [FR]', '2160p', 'resolution', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SDR [FR]', 'WEB-DL', 'source', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SDR [FR]', 'DV HDR', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SDR [FR]', 'Movies Anywhere', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Netflix Enhancement [FR]', 'NF', 'release_title', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Netflix Enhancement [FR]', 'Not 2160p', 'resolution', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dolby Vision (Without Fallback) [FR]', 'HDR', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dolby Vision (Without Fallback) [FR]', 'HDR10+', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Extras [FR]', 'Movie Extras', 'release_title', 'radarr', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Extras [FR]', 'TV Extras', 'release_title', 'sonarr', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Upscale [FR]', 'Upscale', 'release_title', 'all', 0, 0);
@@ -881,8 +901,8 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SKST [FR]', 'WEBRip', 'source', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Nordic [FR]', 'Nordic', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dual Audio [FR]', 'Dual Audio', 'release_title', 'all', 0, 1);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Original [FR]', 'Original', 'language', 'all', 0, 1);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Original [FR]', 'French', 'language', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Original [FR]', 'French Except', 'language', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Original [FR]', 'Original Except', 'language', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Original [FR]', 'Not French MULTi', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Original [FR]', 'Not French Original Marker', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French VF [FR]', 'Not Original', 'language', 'all', 1, 1);
@@ -1780,7 +1800,9 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CPB', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CR4ZYTiME', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CRYPT0', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CUSThOMe', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CZ', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Caribou', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Champion9', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Choco', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CiELOS', 'release_group', 'all', 0, 0);
@@ -1865,6 +1887,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HERC', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HEVCBay', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HMiDiMADRiDi', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HOLiDAYS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HYBRiS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HYPERION', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HeavyWeight', 'release_group', 'all', 0, 0);
@@ -1932,7 +1955,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Maxadonf', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MaxiBeNoul', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'McNULTY', 'release_group', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MeMyl', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MeMyI', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MiND', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Monchat', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Monkey D Lulu', 'release_group', 'all', 0, 0);
@@ -2141,6 +2164,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'tFR', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Marker FR (INTL) [FR]', 'French MULTi Explicit Marker (INTL)', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'French MultiSub (INTL)', 'release_title', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Not French MultiSub Explicit Marker (INTL)', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', '4FR', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'ACOOL', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'AJP', 'release_group', 'all', 0, 0);
@@ -2204,7 +2228,9 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CPB', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CR4ZYTiME', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CRYPT0', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CUSThOMe', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CZ', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Caribou', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Champion9', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Choco', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CiELOS', 'release_group', 'all', 0, 0);
@@ -2289,6 +2315,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HERC', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HEVCBay', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HMiDiMADRiDi', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HOLiDAYS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HYBRiS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HYPERION', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HeavyWeight', 'release_group', 'all', 0, 0);
@@ -2356,7 +2383,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Maxadonf', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MaxiBeNoul', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'McNULTY', 'release_group', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MeMyl', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MeMyI', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MiND', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Monchat', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Monkey D Lulu', 'release_group', 'all', 0, 0);
@@ -3497,7 +3524,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SIDCA Tier 02 [EN]', 'PoF', 'release_group', 'sonarr', 0, 0);
 
 -- [fr] condition_patterns
--- condition_patterns: 2331 rows
+-- condition_patterns: 2349 rows
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Bluray [FR]', 'Not Remux', 'Remux [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p HDTV [FR]', 'HDTV Regex', 'HDTV [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Remux [FR]', 'Remux', 'Remux [FR]');
@@ -3806,7 +3833,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'LMPS', 'LMPS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'LNA3d', 'LNA3d [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'MACK4', 'MACK4 [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'MeMyl', 'MeMyl [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'MeMyI', 'MeMyI [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'METALLIKA', 'METALLIKA [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'MGD', 'MGD [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'Moorea81', 'Moorea81 [FR]');
@@ -3939,12 +3966,14 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'BRiNK', 'BRiNK [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'BTT', 'BTT [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'CARAPiLS', 'CARAPiLS [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'Caribou', 'Caribou [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'CiELOS', 'CiELOS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'CiNEMA', 'CiNEMA [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'CMBHD', 'CMBHD [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'CoRa', 'CoRa [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'COUAC', 'COUAC [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'CRYPT0', 'CRYPT0 [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'CUSThOMe', 'CUSThOMe [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'D4KiD', 'D4KiD [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'DEAL', 'DEAL [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'DiEBEX', 'DiEBEX [FR]');
@@ -3968,6 +3997,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'HERC', 'HERC [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'HiggsBoson', 'HiggsBoson [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'HiRoSHiMa', 'HiRoSHiMa [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'HOLiDAYS', 'HOLiDAYS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'HYBRiS', 'HYBRiS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'HyDe', 'HyDe [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'JMT', 'JMT [FR]');
@@ -4105,10 +4135,8 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French Missing [FR]', 'Not French Original Marker', 'French Original Marker [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi [FR]', 'French MULTi', 'French MULTi [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi [FR]', 'Not French VFQ', 'French VFQ [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi [FR]', 'Not French VOSTFR', 'French VOSTFR [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French VF [FR]', 'French VF', 'French VF [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French VF [FR]', 'Not French MULTi', 'French MULTi [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French VF [FR]', 'Not French VOSTFR', 'French VOSTFR [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French VF [FR]', 'Not French VFQ', 'French VFQ [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French VF [FR]', 'Not French Original Marker', 'French Original Marker [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French VFQ [FR]', 'French VFQ', 'French VFQ [FR]');
@@ -4193,12 +4221,22 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Bluray) [FR]', 'x265', 'x265 [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Efficient) [FR]', 'x265', 'x265 [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Missing) [FR]', 'Not Remux', 'Remux [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Missing) [FR]', 'Not x264', 'x264 [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Missing) [FR]', 'Not x265', 'x265 [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Missing) [FR]', 'Not x264', 'AVC [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Missing) [FR]', 'Not x265', 'HEVC [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Remux) [FR]', 'x265', 'HEVC [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (Remux) [FR]', 'Remux', 'Remux [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('x265 (WEB) [FR]', 'x265', 'x265 [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Xvid [FR]', 'Xvid', 'Xvid [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('CAM [FR]', 'CAM', 'CAM [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('ATV [FR]', 'ATV Regex', 'Apple TV [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('HBO [FR]', 'HBO Regex', 'HBO [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('HBO [FR]', 'HBO Rename Regex', 'HBO Rename [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('DSCP [FR]', 'DSCP Regex', 'Discovery+ [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('SDR [FR]', 'DV HDR', 'Basic HDR Formats [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('SDR [FR]', 'Movies Anywhere', 'Movies Anywhere [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Netflix Enhancement [FR]', 'NF', 'Netflix [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dolby Vision (Without Fallback) [FR]', 'HDR', 'HDR [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dolby Vision (Without Fallback) [FR]', 'HDR10+', 'HDR10+ [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Extras [FR]', 'Movie Extras', 'Movie Extras [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Extras [FR]', 'TV Extras', 'TV Extras [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Upscale [FR]', 'Upscale', 'Upscale [FR]');
@@ -5037,7 +5075,9 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CPB', 'CPB [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CR4ZYTiME', 'CR4ZYTiME [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CRYPT0', 'CRYPT0 [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CUSThOMe', 'CUSThOMe [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CZ', 'CZ [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Caribou', 'Caribou [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Champion9', 'Champion9 [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Choco', 'Choco [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'CiELOS', 'CiELOS [FR]');
@@ -5122,6 +5162,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HERC', 'HERC [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HEVCBay', 'HEVCBay [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HMiDiMADRiDi', 'HMiDiMADRiDi [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HOLiDAYS', 'HOLiDAYS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HYBRiS', 'HYBRiS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HYPERION', 'HYPERION [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'HeavyWeight', 'HeavyWeight [FR]');
@@ -5189,7 +5230,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Maxadonf', 'Maxadonf [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MaxiBeNoul', 'MaxiBeNoul [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'McNULTY', 'McNULTY [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MeMyl', 'MeMyl [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MeMyI', 'MeMyI [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MiND', 'MiND [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Monchat', 'Monchat [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Monkey D Lulu', 'Monkey D Lulu [FR]');
@@ -5398,6 +5439,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'tFR', 'tFR [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Marker FR (INTL) [FR]', 'French MULTi Explicit Marker (INTL)', 'French MULTi Explicit Marker (INTL) [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'French MultiSub (INTL)', 'French MultiSub (INTL) [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Not French MultiSub Explicit Marker (INTL)', 'French MultiSub Explicit Marker (INTL) [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', '4FR', '4FR [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'ACOOL', 'ACOOL [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'AJP', 'AJP [FR]');
@@ -5461,7 +5503,9 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CPB', 'CPB [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CR4ZYTiME', 'CR4ZYTiME [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CRYPT0', 'CRYPT0 [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CUSThOMe', 'CUSThOMe [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CZ', 'CZ [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Caribou', 'Caribou [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Champion9', 'Champion9 [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Choco', 'Choco [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'CiELOS', 'CiELOS [FR]');
@@ -5546,6 +5590,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HERC', 'HERC [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HEVCBay', 'HEVCBay [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HMiDiMADRiDi', 'HMiDiMADRiDi [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HOLiDAYS', 'HOLiDAYS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HYBRiS', 'HYBRiS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HYPERION', 'HYPERION [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'HeavyWeight', 'HeavyWeight [FR]');
@@ -5613,7 +5658,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Maxadonf', 'Maxadonf [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MaxiBeNoul', 'MaxiBeNoul [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'McNULTY', 'McNULTY [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MeMyl', 'MeMyl [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MeMyI', 'MeMyI [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MiND', 'MiND [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Monchat', 'Monchat [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Monkey D Lulu', 'Monkey D Lulu [FR]');
@@ -6616,8 +6661,8 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 -- condition_languages: 7 rows
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Missing [FR]', 'French Except', 'French', 1);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Missing [FR]', 'Original Except', 'Original', 1);
-INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Original [FR]', 'Original', 'Original', 0);
-INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Original [FR]', 'French', 'French', 0);
+INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Original [FR]', 'French Except', 'French', 1);
+INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Original [FR]', 'Original Except', 'Original', 1);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French VF [FR]', 'Not Original', 'Original', 0);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Missing (INTL) [FR]', 'French Except', 'French', 1);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('French Missing (INTL) [FR]', 'Original Except', 'Original', 1);
@@ -6646,7 +6691,7 @@ INSERT OR IGNORE INTO "condition_release_types" ("custom_format_name", "conditio
 INSERT OR IGNORE INTO "condition_release_types" ("custom_format_name", "condition_name", "release_type") VALUES ('Season Pack [EN]', 'Season Pack', 'season_pack');
 
 -- [fr] condition_resolutions
--- condition_resolutions: 94 rows
+-- condition_resolutions: 96 rows
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('1080p Bluray [FR]', '1080p', '1080p');
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('1080p HDTV [FR]', '1080p', '1080p');
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('1080p Remux [FR]', '1080p', '1080p');
@@ -6685,6 +6730,8 @@ INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('x265 (Missing) [FR]', '2160p', '2160p');
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('x265 (Remux) [FR]', 'Not 2160p', '2160p');
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('x265 (WEB) [FR]', 'Not 2160p', '2160p');
+INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('SDR [FR]', '2160p', '2160p');
+INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('Netflix Enhancement [FR]', 'Not 2160p', '2160p');
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('SDTV [FR]', 'Not 720p', '720p');
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('SDTV [FR]', 'Not 1080p', '1080p');
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('SDTV [FR]', 'Not 2160p', '2160p');
@@ -6756,7 +6803,7 @@ INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_
 INSERT OR IGNORE INTO "condition_resolutions" ("custom_format_name", "condition_name", "resolution") VALUES ('x265 [EN]', 'Not 2160p', '2160p');
 
 -- [fr] condition_sources
--- condition_sources: 126 rows
+-- condition_sources: 133 rows
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('1080p Bluray [FR]', 'Bluray', 'bluray');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('1080p HDTV [FR]', 'HDTV', 'television');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('1080p WEB-DL [FR]', 'WEB-DL', 'web_dl');
@@ -6837,6 +6884,13 @@ INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('x265 (WEB) [FR]', 'Bluray', 'bluray');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('Xvid [FR]', 'Not DVD', 'dvd');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('Xvid [FR]', 'Not HDTV', 'television');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('ATV [FR]', 'WEB-DL', 'web_dl');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('ATV [FR]', 'WEBRip', 'webrip');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('HBO [FR]', 'WEB-DL', 'web_dl');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('HBO [FR]', 'WEBRip', 'webrip');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('DSCP [FR]', 'WEB-DL', 'web_dl');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('DSCP [FR]', 'WEBRip', 'webrip');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('SDR [FR]', 'WEB-DL', 'web_dl');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('Remux [FR]', 'Not DVD', 'dvd');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('Remux [FR]', 'Remux Source', 'bluray_raw');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('DVD [FR]', 'DVD', 'dvd');
