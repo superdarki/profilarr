@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=4608d601(ns= [FR]); dumpstarr=621aa69b(ns= [EN])
+-- schema e1c2bd73 | sources: fr=e207240d(ns= [FR]); dumpstarr=9e117f50(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -87,12 +87,12 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 03 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing [FR]', 'Rejette les releases sans preuve de francais dans le titre, les metadonnees de langue ou les marqueurs MediaInfo AUDIO/SUB conserves au renommage.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi [FR]', 'Priorise les releases MULTi francaises detectees dans le titre avant telechargement ou confirmees par le marqueur MediaInfo [AUDIO][FR+--] apres analyse.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing [FR]', 'Rejette les releases sans preuve de francais dans le titre, les metadonnees de langue ou les blocs MediaInfo audio/sous-titres conserves au renommage.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi [FR]', 'Priorise les releases MULTi francaises detectees dans le titre avant telechargement ou confirmees apres analyse par un bloc audio MediaInfo tel que [FR+EN].', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Original Marker [FR]', 'Priorise les releases marquees VOF ou VOQ comme version originale francophone.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French VF [FR]', 'Priorise les releases avec audio francais unique detectees dans le titre ou confirmees par le marqueur MediaInfo [AUDIO][FR], hors contenu original francophone.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French VF [FR]', 'Priorise les releases avec audio francais unique detectees dans le titre ou confirmees apres analyse par le bloc audio MediaInfo [FR] hors bloc de sous-titres, hors contenu original francophone.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French VFQ [FR]', 'Rejects Quebec French releases from French profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French VOSTFR [FR]', 'Detecte les marqueurs VOSTFR avant telechargement puis la presence de sous-titres francais via [SUB][FR] ou [SUB][FR+--] apres analyse, sans cumuler avec MULTi ou VF.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French VOSTFR [FR]', 'Detecte les marqueurs VOSTFR avant telechargement puis le francais dans le bloc MediaInfo de sous-titres, par exemple ([FR]) ou ([EN+FR]), sans cumuler avec MULTi ou VF.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Full Disc [FR]', 'Matches the ''Full Disc'' regex pattern and negates any remuxes / encodes. ', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Full Disc (Quality Match) [FR]', 'Matches Full Discs using a Radarr Quality Match', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('German DL [FR]', '', 0);
@@ -256,7 +256,7 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p WEBRip [FR]', 'Matches non-tier 2160p WEBRip releases for 2160p Compact FR fallback.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('IMAX [FR]', 'Matches IMAX releases as a premium framing / aspect-ratio enhancement.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Matches INTL MULTi releases only when MULTi is present and the release group is one of the known French teams.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi + Marker FR (INTL) [FR]', 'Matches INTL MULTi releases when the title carries an explicit French marker before download or MediaInfo confirms [AUDIO][FR+--] after analysis.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi + Marker FR (INTL) [FR]', 'Matches INTL MULTi releases when the title carries an explicit French marker before download or renamed MediaInfo audio contains French and another language after analysis.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Matches INTL MultiSub releases only when MultiSub is present and the release group is one of the known French teams.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MultiSub + Marker FR (INTL) [FR]', 'Matches INTL MultiSub releases only when MultiSub is followed by an explicit French marker. Useful on international trackers where MultiSub alone does not guarantee French subtitles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing (INTL) [FR]', 'Rejects INTL releases without reliable French evidence in the title before download or in the MediaInfo AUDIO/SUB markers after analysis.', 0);
