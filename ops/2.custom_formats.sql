@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=e207240d(ns= [FR]); dumpstarr=e463839b(ns= [EN])
+-- schema e1c2bd73 | sources: fr=e207240d(ns= [FR]); dumpstarr=5684858a(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -262,7 +262,7 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing (INTL) [FR]', 'Rejects INTL releases without reliable French evidence in the title before download or in the MediaInfo AUDIO/SUB markers after analysis.', 0);
 
 -- [dumpstarr] custom_formats
--- custom_formats: 145 rows
+-- custom_formats: 144 rows
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2.0 Stereo [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('3D [EN]', 'Matches the ''3D'' Regex Pattern', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('4K Remaster [EN]', '', 0);
@@ -365,7 +365,6 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 • You''ll see them with names like `Director''s Cut`, `Extended Edition`, or creative marketing labels like `Ultimate Cut`
 • A single film can have `multiple special editions` as technology improves or different creative perspectives emerge', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('STAN [EN]', 'Matches ''STAN'' WEB-DLs. Negates any encodes.', 1);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Surround Sound [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('SYFY [EN]', '', 1);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Theatrical [EN]', '', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('TrueHD [EN]', 'Matches ''TrueHD'' Regex Pattern and negates any other audio types that might conflict.', 0);

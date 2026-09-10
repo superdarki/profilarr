@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 1.regular_expressions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: regular_expressions
--- schema e1c2bd73 | sources: fr=e207240d(ns= [FR]); dumpstarr=e463839b(ns= [EN])
+-- schema e1c2bd73 | sources: fr=e207240d(ns= [FR]); dumpstarr=5684858a(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -1145,7 +1145,7 @@ INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('DUDU [EN]', '^(DUDU)$', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('The Office (US) S09 Extended Banned Groups [EN]', '(?i)^the[ ._-]+office[ ._-]+us[ ._-]+S09.*Extended.*-(FLUX)\b', NULL, 'Matches releases from season 9 of the extended version of The Office (US).');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('nekotan [EN]', '\b(nekotan)\b', NULL, NULL);
-INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Phineas and Ferb Banned Groups [EN]', '(?i)^phineas[ ._-]+and[ ._-]+ferb.*-(KAiZEN|PHOENiX)\b', NULL, 'Matches releases for the show Phineas and Ferb from groups that do not follow the TVDB ordering.');
+INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Phineas and Ferb Banned Groups [EN]', '(?i)^phineas[ ._-]+and[ ._-]+ferb.*-(KAiZEN|PHOENiX|RakuFIN)\b', NULL, 'Matches releases for the show Phineas and Ferb from groups that do not follow the TVDB ordering.');
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Pikanet128 [EN]', '^(Pikanet128)$', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('NLKIDS [EN]', '^(NLKIDS)$', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('$tore-Chill [EN]', '\b(\$tore-Chill)\b', NULL, NULL);
