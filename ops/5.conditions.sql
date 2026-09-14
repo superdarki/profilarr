@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=e207240d(ns= [FR]); dumpstarr=74280dac(ns= [EN])
+-- schema e1c2bd73 | sources: fr=b40f4d61(ns= [FR]); dumpstarr=74280dac(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -9,7 +9,7 @@
 PRAGMA foreign_keys = OFF;
 
 -- [fr] custom_format_conditions
--- custom_format_conditions: 2589 rows
+-- custom_format_conditions: 2592 rows
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', '1080p', 'resolution', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Bluray', 'source', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Not Remux', 'release_title', 'all', 1, 1);
@@ -496,6 +496,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'AiRTV', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'AMB3R', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'ANMWR', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'AvALoN', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'AVON', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'AYMO', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Scene Tier [FR]', 'AZR', 'release_group', 'all', 0, 0);
@@ -1767,6 +1768,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Anime Heart', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Aoi Project', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Arcedo', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'AvALoN', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'B@tman', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'BANKAi', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'BAWLS', 'release_group', 'all', 0, 0);
@@ -2195,6 +2197,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Anime Heart', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Aoi Project', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Arcedo', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'AvALoN', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'B@tman', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'BANKAi', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'BAWLS', 'release_group', 'all', 0, 0);
@@ -3514,7 +3517,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SIDCA Tier 03 [EN]', 'ELiTE', 'release_group', 'sonarr', 0, 0);
 
 -- [fr] condition_patterns
--- condition_patterns: 2349 rows
+-- condition_patterns: 2352 rows
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Bluray [FR]', 'Not Remux', 'Remux [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p HDTV [FR]', 'HDTV Regex', 'HDTV [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Remux [FR]', 'Remux', 'Remux [FR]');
@@ -3944,6 +3947,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'AiRTV', 'AiRTV [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'AMB3R', 'AMB3R [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'ANMWR', 'ANMWR [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'AvALoN', 'AvALoN [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'AVON', 'AVON [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'AYMO', 'AYMO [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Scene Tier [FR]', 'AZR', 'AZR [FR]');
@@ -5032,6 +5036,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Anime Heart', 'Anime Heart [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Aoi Project', 'Aoi Project [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Arcedo', 'Arcedo [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'AvALoN', 'AvALoN [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'B@tman', 'B@tman [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'BANKAi', 'BANKAi [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'BAWLS', 'BAWLS [FR]');
@@ -5460,6 +5465,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Anime Heart', 'Anime Heart [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Aoi Project', 'Aoi Project [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Arcedo', 'Arcedo [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'AvALoN', 'AvALoN [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'B@tman', 'B@tman [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'BANKAi', 'BANKAi [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'BAWLS', 'BAWLS [FR]');

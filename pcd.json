@@ -33,7 +33,7 @@
     "fr": {
       "repo": "https://github.com/Jojont54/Profilarr-database-french-regex",
       "branch": "stable",
-      "sha": "e207240d",
+      "sha": "b40f4d61",
       "namespace": " [FR]"
     },
     "dumpstarr": {
@@ -43,6 +43,6 @@
       "namespace": " [EN]"
     },
     "namespaced_custom_formats": 352,
-    "namespaced_regular_expressions": 1237
+    "namespaced_regular_expressions": 1238
   }
 }
