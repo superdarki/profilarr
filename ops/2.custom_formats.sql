@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=b40f4d61(ns= [FR]); dumpstarr=74280dac(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=74280dac(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -9,12 +9,12 @@
 PRAGMA foreign_keys = OFF;
 
 -- [fr] custom_formats
--- custom_formats: 208 rows
+-- custom_formats: 172 rows
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Bluray [FR]', 'Matches 1080p Blurays that are NOT remuxes', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p HDTV [FR]', 'Matches 1080p HDTV.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Remux [FR]', 'Matches 1080p Remux', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p WEB-DL [FR]', 'Matches 1080p WEB-DLs.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p WEB-DL (Efficient) [FR]', 'Matches 1080p WEB-DLs.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p WEB-DL AVC [FR]', 'Matches 1080p WEB-DLs.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p WEBRip [FR]', 'Matches 1080p WEBRips.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Remux [FR]', 'Matches 2160p Remux', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p WEB-DL [FR]', 'Matches 2160p WEB-DLs.', 0);
@@ -66,27 +66,7 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Extras [FR]', 'Matches the ''Extras'' Regex Pattern', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FLAC [FR]', 'Matches ''FLAC'' Regex Pattern and negates any other audio types that might conflict.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Anime FanSub [FR]', 'Matches French anime fansub release groups', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Anime Tier 01 [FR]', 'Matches French anime release groups who fall under Anime Tier 01', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Anime Tier 02 [FR]', 'Matches French anime release groups who fall under Anime Tier 02', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Anime Tier 03 [FR]', 'Matches French anime release groups who fall under Anime Tier 03', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Global Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Global Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR HDLight Tier [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR LQ [FR]', 'Matches French low-quality release groups', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie HD Bluray Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie HD Bluray Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie Remux Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie Remux Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie UHD Bluray Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie UHD Bluray Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie WEB Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Movie WEB Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Scene Tier [FR]', 'Matches known French scene release groups', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV HD Bluray Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV Remux Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 01 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 02 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR TV WEB Tier 03 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing [FR]', 'Rejette les releases sans preuve de francais dans le titre, les metadonnees de langue ou les blocs MediaInfo audio/sous-titres conserves au renommage.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi [FR]', 'Priorise les releases MULTi francaises detectees dans le titre avant telechargement ou confirmees apres analyse par un bloc audio MediaInfo tel que [FR+EN].', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Original Marker [FR]', 'Priorise les releases marquees VOF ou VOQ comme version originale francophone.', 0);
@@ -191,68 +171,19 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Dual Audio [FR]', 'Matches releases explicitly tagged as Dual Audio.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Original [FR]', 'Identifie les contenus uniquement en francais dont le francais est aussi la langue originale, sans exiger de marqueur de titre.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('576p WEB-DL [FR]', 'Matches 576p WEB-DLs.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Bluray (Efficient) [FR]', 'Matches 1080p x264 Blurays as an Efficient movie fallback.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 720p Quality Tier 1 [FR]', 'Dictionarry-shaped FR 720p Quality Tier 1 built from TRaSH FR source tiers.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 720p Quality Tier 2 [FR]', 'Dictionarry-shaped FR 720p Quality Tier 2 built from TRaSH FR source tiers and lowered FR Global Tier 01.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 720p Quality Tier 3 [FR]', 'Dictionarry-shaped FR 720p Quality Tier 3 built from TRaSH FR source tiers and lowered FR Global Tier 02.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Balanced Tier 1 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Balanced Tier 2 [FR]', 'Deprecated by FR source tier taxonomy. Kept only to satisfy Profilarr foreign-key metadata; not used by final FR profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Compact Bluray Tier 1 [FR]', 'Dictionarry-shaped FR 1080p Compact Movie Bluray Tier 1 built from HDLight groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Compact Bluray Tier 2 [FR]', 'Dictionarry-shaped FR 1080p Compact Movie Bluray Tier 2 built from HDLight groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Compact WEB Tier 1 [FR]', 'Dictionarry-shaped FR 1080p Compact Movie WEB Tier 1 built from HDLight groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Compact WEB Tier 2 [FR]', 'Dictionarry-shaped FR 1080p Compact Movie WEB Tier 2 built from HDLight groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Bluray HEVC Tier 1 [FR]', 'Deprecated by FR 1080p Efficient source/tier split. Kept only for FK-backed metadata compatibility.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p WEB-DL HEVC Tier 1 [FR]', 'Deprecated by FR 1080p Efficient source/tier split. Kept only for FK-backed metadata compatibility.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Quality Tier 1 [FR]', 'Dictionarry-shaped FR 1080p Quality Tier 1 built from TRaSH FR source tiers.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Quality Tier 2 [FR]', 'Dictionarry-shaped FR 1080p Quality Tier 2 built from TRaSH FR source tiers and lowered FR Global Tier 01.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Quality Tier 3 [FR]', 'Dictionarry-shaped FR 1080p Quality Tier 3 built from TRaSH FR source tiers and lowered FR Global Tier 02.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Balanced Bluray Tier 1 [FR]', 'Deprecated by FR 2160p Balanced source/tier split. Kept only for FK-backed metadata compatibility.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Balanced WEB Tier 1 [FR]', 'Deprecated by FR 2160p Balanced source/tier split. Kept only for FK-backed metadata compatibility.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Balanced Tier 2 [FR]', 'Dictionarry-shaped FR 2160p Balanced Tier 2 for validated stable French groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Efficient Bluray Tier 1 [FR]', 'Deprecated by FR 2160p Efficient source/tier split. Kept only for FK-backed metadata compatibility.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Efficient WEB Tier 1 [FR]', 'Deprecated by FR 2160p Efficient source/tier split. Kept only for FK-backed metadata compatibility.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Quality Tier 1 [FR]', 'Dictionarry-shaped FR 2160p Quality Tier 1 built from TRaSH FR source tiers.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Quality Tier 2 [FR]', 'Dictionarry-shaped FR 2160p Quality Tier 2 built from TRaSH FR source tiers and lowered FR Global Tier 01.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Quality Tier 3 [FR]', 'Dictionarry-shaped FR 2160p Quality Tier 3 built from TRaSH FR source tiers and lowered FR Global Tier 02.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Remux Tier 1 [FR]', 'Dictionarry-shaped FR Remux Tier 1 built from TRaSH FR Remux Tier 01.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Remux Tier 2 [FR]', 'Dictionarry-shaped FR Remux Tier 2 built from TRaSH FR Remux Tier 02.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p WEB-DL (Efficient) [FR]', 'Matches 2160p WEB-DLs for Efficient profiles.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Compact Bluray Tier 1 [FR]', 'FR 2160p Compact Bluray Tier 1 for validated 4KLight groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Compact Bluray Tier 2 [FR]', 'FR 2160p Compact Bluray Tier 2 for validated 4KLight groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Compact WEB Tier 1 [FR]', 'FR 2160p Compact WEB Tier 1 for validated 4KLight WEBRip groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Compact WEB Tier 2 [FR]', 'FR 2160p Compact WEB Tier 2 for validated 4KLight WEBRip groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('HDLight [FR]', 'Matches HDLight and similar light/re-encode markers below 2160p.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('4KLight [FR]', 'Matches 4KLight and similar light/re-encode markers on 2160p releases.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p WEB-DL (Balanced) [FR]', 'Matches 2160p WEB-DLs for Balanced profiles when the release group is not already covered by the FR Balanced tier.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('4KLight Bluray (Compact) [FR]', 'Matches non-tier 2160p 4KLight Bluray releases for 2160p Compact FR.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('4KLight WEBRip (Compact) [FR]', 'Matches non-tier 2160p 4KLight WEBRip releases for 2160p Compact FR.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('HDLight Bluray (Compact) [FR]', 'Matches non-tier 1080p HDLight Bluray releases for 1080p Compact FR.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('HDLight WEBRip (Compact) [FR]', 'Matches non-tier 1080p HDLight WEB releases for 1080p Compact FR.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p WEBRip (Compact) [FR]', 'Matches non-tier 1080p WEBRip releases for Compact FR fallback.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR WEB Top Tier [FR]', 'Matches the most trusted French WEB release groups. Kept separate from FR WEB Tier 1.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR WEB Tier 1 [FR]', 'Matches trusted French WEB release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR WEB Tier 2 [FR]', 'Matches good French WEB release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR WEB Tier 3 [FR]', 'Matches acceptable French WEB release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Bluray Tier 1 [FR]', 'Matches trusted French Bluray release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Bluray Tier 2 [FR]', 'Matches good French Bluray release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR UHD Bluray Tier 1 [FR]', 'Matches trusted French UHD Bluray release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR UHD Bluray Tier 2 [FR]', 'Matches good French UHD Bluray release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Light Tier 1 [FR]', 'Matches trusted French HDLight/4KLight release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Light Tier 2 [FR]', 'Matches good French HDLight/4KLight release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR DVD Tier 1 [FR]', 'Matches trusted French DVD release groups.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Unknown Tier 1 [FR]', 'Matches French release groups kept without a precise source bucket yet.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p Bluray HEVC [FR]', 'FR 1080p HEVC Bluray source pass without release-group condition.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 1080p WEB-DL HEVC [FR]', 'FR 1080p HEVC WEB-DL source pass without release-group condition.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Balanced WEB [FR]', '2160p WEB-DL Balanced source pass without release-group condition.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Balanced Bluray [FR]', '2160p Bluray Balanced source pass without release-group condition.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p WEB Top Tier [FR]', '2160p WEB copy of FR WEB Top Tier with 2160p and Not Remux gates.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p WEB Tier 1 [FR]', '2160p WEB copy of FR WEB Tier 1 with 2160p and Not Remux gates.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p WEB Tier 2 [FR]', '2160p WEB copy of FR WEB Tier 2 with 2160p and Not Remux gates.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p WEB Tier 3 [FR]', '2160p WEB copy of FR WEB Tier 3 with 2160p and Not Remux gates.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Bluray Tier 1 [FR]', '2160p Bluray copy of FR Bluray Tier 1 with 2160p and Not Remux gates.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Bluray Tier 2 [FR]', '2160p Bluray copy of FR Bluray Tier 2 with 2160p and Not Remux gates.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Efficient WEB h265 [FR]', '2160p WEB-DL h265 source pass for 2160p Efficient FR without release-group condition.', 0);
-INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR 2160p Efficient Bluray h265 [FR]', '2160p Bluray h265 source pass for 2160p Efficient FR without release-group condition.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Bluray AVC [FR]', 'Matches 1080p x264 Blurays as an Efficient movie fallback.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p WEB-DL AVC [FR]', 'Matches 2160p AVC WEB-DLs.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('HDLight [FR]', 'Matches HDLight and similar light/re-encode markers below 2160p.', 1);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('4KLight [FR]', 'Matches 4KLight and similar light/re-encode markers on 2160p releases.', 1);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p 4KLight Bluray [FR]', 'Matches non-tier 2160p 4KLight Bluray releases for 2160p Compact FR.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p 4KLight WEBRip [FR]', 'Matches non-tier 2160p 4KLight WEBRip releases for 2160p Compact FR.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p HDLight Bluray [FR]', 'Matches non-tier 1080p HDLight Bluray releases for 1080p Compact FR.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p HDLight WEBRip [FR]', 'Matches non-tier 1080p HDLight WEB-DL or WEBRip releases for 1080p Compact FR.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p WEBRip (Compact) [FR]', 'Matches non-tier 1080p WEBRip releases without an HDLight marker for Compact FR fallback.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Bluray HEVC [FR]', '1080p HEVC Bluray source pass without release-group condition.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p WEB-DL HEVC [FR]', '1080p HEVC WEB-DL source pass without release-group condition.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p WEB-DL HEVC [FR]', 'Matches 2160p HEVC WEB-DL releases without release-group conditions.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Bluray HEVC [FR]', 'Matches non-remux 2160p HEVC Bluray releases without release-group conditions.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p WEBRip [FR]', 'Matches non-tier 2160p WEBRip releases for 2160p Compact FR fallback.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('IMAX [FR]', 'Matches IMAX releases as a premium framing / aspect-ratio enhancement.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Matches INTL MULTi releases only when MULTi is present and the release group is one of the known French teams.', 0);
@@ -260,6 +191,39 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Matches INTL MultiSub releases only when MultiSub is present and the release group is one of the known French teams.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French MultiSub + Marker FR (INTL) [FR]', 'Matches INTL MultiSub releases only when MultiSub is followed by an explicit French marker. Useful on international trackers where MultiSub alone does not guarantee French subtitles.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('French Missing (INTL) [FR]', 'Rejects INTL releases without reliable French evidence in the title before download or in the MediaInfo AUDIO/SUB markers after analysis.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Anime SubFr [FR]', 'Matches trusted anime groups whose releases commonly provide French subtitles through VOSTFR or MultiSub releases.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Team Tier 1 [FR]', 'Matches the most trusted French release groups, independently of source or media type.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Team Tier 2 [FR]', 'Matches very good French release groups, independently of source or media type.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Team Tier 3 [FR]', 'Matches reliable French release groups, independently of source or media type.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('FR Team Tier 4 [FR]', 'Matches known but unranked French release groups, independently of source or media type.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Movie Size 2-3 GiB [FR]', 'Matches Radarr 1080p releases over 2 GiB and up to 3 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Movie Size 3-4 GiB [FR]', 'Matches Radarr 1080p releases over 3 GiB and up to 4 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Movie Size 4-6 GiB [FR]', 'Matches Radarr 1080p releases over 4 GiB and up to 6 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Movie Size 6-8 GiB [FR]', 'Matches Radarr 1080p releases over 6 GiB and up to 8 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Movie Size 8-10 GiB [FR]', 'Matches Radarr 1080p releases over 8 GiB and up to 10 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Movie Size 10-15 GiB [FR]', 'Matches Radarr 1080p releases over 10 GiB and up to 15 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Movie Size > 15 GiB [FR]', 'Matches Radarr 1080p releases over 15 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Movie Size 6-8 GiB [FR]', 'Matches Radarr 2160p releases over 6 GiB and up to 8 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Movie Size 8-10 GiB [FR]', 'Matches Radarr 2160p releases over 8 GiB and up to 10 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Movie Size 10-12 GiB [FR]', 'Matches Radarr 2160p releases over 10 GiB and up to 12 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Movie Size 12-15 GiB [FR]', 'Matches Radarr 2160p releases over 12 GiB and up to 15 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Movie Size 15-18 GiB [FR]', 'Matches Radarr 2160p releases over 15 GiB and up to 18 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Movie Size 18-25 GiB [FR]', 'Matches Radarr 2160p releases over 18 GiB and up to 25 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Movie Size > 25 GiB [FR]', 'Matches Radarr 2160p releases over 25 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Episode Size <= 800 MiB [FR]', 'Matches non-season-pack Sonarr 1080p releases up to 800 MiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Season Pack Size 10-20 GiB [FR]', 'Matches Sonarr 1080p season packs over 10 GiB and up to 20 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Episode Size 800 MiB-1.2 GiB [FR]', 'Matches non-season-pack Sonarr 1080p releases over 800 MiB and up to 1.2 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Season Pack Size 20-35 GiB [FR]', 'Matches Sonarr 1080p season packs over 20 GiB and up to 35 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Episode Size 1.2-2 GiB [FR]', 'Matches non-season-pack Sonarr 1080p releases over 1.2 GiB and up to 2 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Season Pack Size > 35 GiB [FR]', 'Matches Sonarr 1080p season packs over 35 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Compact Episode Size > 2 GiB [FR]', 'Matches non-season-pack Sonarr 1080p releases over 2 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Episode Size <= 2 GiB [FR]', 'Matches non-season-pack Sonarr 2160p releases up to 2 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Season Pack Size 20-30 GiB [FR]', 'Matches Sonarr 2160p season packs over 20 GiB and up to 30 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Episode Size 2-3 GiB [FR]', 'Matches non-season-pack Sonarr 2160p releases over 2 GiB and up to 3 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Season Pack Size 30-50 GiB [FR]', 'Matches Sonarr 2160p season packs over 30 GiB and up to 50 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Episode Size 3-5 GiB [FR]', 'Matches non-season-pack Sonarr 2160p releases over 3 GiB and up to 5 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Season Pack Size > 50 GiB [FR]', 'Matches Sonarr 2160p season packs over 50 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Episode Size > 5 GiB [FR]', 'Matches non-season-pack Sonarr 2160p releases over 5 GiB.', 0);
 
 -- [dumpstarr] custom_formats
 -- custom_formats: 144 rows
