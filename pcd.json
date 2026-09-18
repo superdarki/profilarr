@@ -39,10 +39,10 @@
     "dumpstarr": {
       "repo": "https://github.com/Dumpstarr/Database",
       "branch": "stable",
-      "sha": "30ebe816",
+      "sha": "17d559ac",
       "namespace": " [EN]"
     },
     "namespaced_custom_formats": 316,
-    "namespaced_regular_expressions": 1260
+    "namespaced_regular_expressions": 1259
   }
 }

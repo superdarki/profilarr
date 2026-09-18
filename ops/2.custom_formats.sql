@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=30ebe816(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=17d559ac(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
