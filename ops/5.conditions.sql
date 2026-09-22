@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=80d49db5(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=ee4368c5(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -1872,7 +1872,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2160p Compact Episode Size > 5 GiB [FR]', 'Not Season Pack', 'release_type', 'sonarr', 1, 1);
 
 -- [dumpstarr] custom_format_conditions
--- custom_format_conditions: 909 rows
+-- custom_format_conditions: 918 rows
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Stereo', 'release_title', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Not 3.0ch', 'release_title', 'all', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2.0 Stereo [EN]', 'Not 4.0', 'release_title', 'all', 1, 1);
@@ -2782,6 +2782,15 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SIDCA Tier 02 [EN]', 'RARBG', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SIDCA Tier 03 [EN]', 'PoF', 'release_group', 'sonarr', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('SIDCA Tier 03 [EN]', 'ELiTE', 'release_group', 'sonarr', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('MA Preferred [EN]', 'WEB-DL', 'source', 'radarr', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('MA Preferred [EN]', 'Dolby Digital +', 'release_title', 'radarr', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('MA Preferred [EN]', 'HDR', 'release_title', 'radarr', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('MA Preferred [EN]', 'MA', 'release_title', 'radarr', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('MA Preferred [EN]', 'TRaSH WEB Tier 01', 'release_group', 'radarr', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('MA Preferred [EN]', 'TRaSH WEB Tier 02', 'release_group', 'radarr', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('MA Preferred [EN]', 'TRaSH WEB Tier 03', 'release_group', 'radarr', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'Mic Dubbed', 'release_title', 'radarr', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Bad Source [EN]', 'Line Dubbed', 'release_title', 'radarr', 0, 0);
 
 -- [fr] condition_patterns
 -- condition_patterns: 1628 rows
@@ -4415,7 +4424,7 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 4 [FR]', 'tFR', 'tFR [FR]');
 
 -- [dumpstarr] condition_patterns
--- condition_patterns: 768 rows
+-- condition_patterns: 776 rows
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2.0 Stereo [EN]', 'Stereo', 'Stereo [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2.0 Stereo [EN]', 'Not 3.0ch', 'Not 3.0ch [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2.0 Stereo [EN]', 'Not 4.0', 'Not 4.0ch [EN]');
@@ -5184,6 +5193,14 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('SIDCA Tier 02 [EN]', 'RARBG', 'RARBG [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('SIDCA Tier 03 [EN]', 'PoF', 'PoF [EN]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('SIDCA Tier 03 [EN]', 'ELiTE', 'ELiTE [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('MA Preferred [EN]', 'Dolby Digital +', 'Dolby Digital + [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('MA Preferred [EN]', 'HDR', 'HDR [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('MA Preferred [EN]', 'MA', 'Movies Anywhere [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('MA Preferred [EN]', 'TRaSH WEB Tier 01', 'TRaSH WEB Tier 01 (Radarr) [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('MA Preferred [EN]', 'TRaSH WEB Tier 02', 'TRaSH WEB Tier 02 (Radarr) [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('MA Preferred [EN]', 'TRaSH WEB Tier 03', 'TRaSH WEB Tier 03 (Radarr) [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'Mic Dubbed', 'Mic Dubbed [EN]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Bad Source [EN]', 'Line Dubbed', 'Line Dubbed [EN]');
 
 -- [fr] condition_languages
 -- condition_languages: 7 rows
@@ -5463,7 +5480,7 @@ INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('2160p 4KLight WEBRip [FR]', 'WEBRip', 'webrip');
 
 -- [dumpstarr] condition_sources
--- condition_sources: 123 rows
+-- condition_sources: 124 rows
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('ABEMA [EN]', 'WEB-DL', 'web_dl');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('ABEMA [EN]', 'WEBRip', 'webrip');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('ADN [EN]', 'WEB-DL', 'web_dl');
@@ -5587,4 +5604,5 @@ INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('ATV [EN]', 'WEBRip', 'webrip');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('FAND [EN]', 'WEBRip', 'webrip');
 INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('FAND [EN]', 'WEB-DL', 'web_dl');
+INSERT OR IGNORE INTO "condition_sources" ("custom_format_name", "condition_name", "source") VALUES ('MA Preferred [EN]', 'WEB-DL', 'web_dl');
 

@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 0.tags-qualities-languages.sql — merged Profilarr v2 (superdarki/profilarr) — tables: tags, languages, qualities
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=80d49db5(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=ee4368c5(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -73,7 +73,7 @@ INSERT OR IGNORE INTO "tags" ("name") VALUES ('x264');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('x265');
 
 -- [dumpstarr] tags
--- tags: 83 rows
+-- tags: 84 rows
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('1080p');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('2160p');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('AI');
@@ -119,6 +119,7 @@ INSERT OR IGNORE INTO "tags" ("name") VALUES ('Language');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('Legacy');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('Lossless');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('Lossy');
+INSERT OR IGNORE INTO "tags" ("name") VALUES ('MA');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('Mobile');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('Preview');
 INSERT OR IGNORE INTO "tags" ("name") VALUES ('Quality');
