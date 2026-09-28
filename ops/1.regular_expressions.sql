@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 1.regular_expressions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: regular_expressions
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=ee4368c5(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=e26d60c9(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -1029,7 +1029,7 @@ INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('RAI [EN]', '\b(RAI)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('REVO [EN]', '\b(REVO)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('SCP-2223 [EN]', '\b(SCP-2223)\b', NULL, NULL);
-INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('SEV [EN]', '\b(SEV|D0ct0rLew|Kira)\b', NULL, NULL);
+INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('SEV [EN]', '\b(SEV)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Vivid [EN]', '\[Vivid\]|-Vivid\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('AkihitoSubs [EN]', '\b(AkihitoSubs)\b', NULL, NULL);
 INSERT OR IGNORE INTO "regular_expressions" ("name", "pattern", "regex101_id", "description") VALUES ('Arukoru [EN]', '\b(Arukoru)\b', NULL, NULL);
