@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 6.links-and-tags.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_group_members, quality_profile_qualities, quality_profile_languages, quality_profile_custom_formats, quality_profile_tags, custom_format_tags, regular_expression_tags
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=69e97ab6(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=fc0c68ad(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -201,7 +201,7 @@ INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('2160p Remux [FR]', '2160p Remux FR', 'SDTV', 16);
 
 -- [dumpstarr] quality_group_members
--- quality_group_members: 65 rows
+-- quality_group_members: 59 rows
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('LQ 1080p [EN]', '1080p', 'Bluray-1080p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('LQ 1080p [EN]', '1080p', 'HDTV-1080p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('LQ 1080p [EN]', '1080p', 'WEBDL-1080p', 0);
@@ -219,8 +219,6 @@ INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 1080p [EN]', 'WEB-720p', 'WEBRip-720p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', 'WEB-1080p', 'WEBDL-1080p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', 'WEB-1080p', 'WEBRip-1080p', 0);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', 'WEB-2160p', 'WEBDL-2160p', 0);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', 'WEB-2160p', 'WEBRip-2160p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', 'WEB-720p', 'WEBDL-720p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', 'WEB-720p', 'WEBRip-720p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('TV 1080p [EN]', 'WEB 1080p', 'WEBDL-1080p', 0);
@@ -260,13 +258,9 @@ INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 1080p HQ [EN]', '1080p', 'WEBDL-1080p', 0);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 1080p HQ [EN]', '1080p', 'WEBRip-1080p', 1);
 INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 1080p HQ [EN]', '1080p', 'Bluray-1080p', 2);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('SweatyEgg69 Movies [EN]', 'WEB-1080p', 'WEBDL-1080p', 0);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('SweatyEgg69 Movies [EN]', 'WEB-1080p', 'WEBRip-1080p', 1);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('SweatyEgg69 Movies [EN]', 'WEB-720p', 'WEBDL-720p', 0);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('SweatyEgg69 Movies [EN]', 'WEB-720p', 'WEBRip-720p', 1);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('SweatyEgg69 Movies [EN]', '2160p', 'WEBDL-2160p', 0);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('SweatyEgg69 Movies [EN]', '2160p', 'WEBRip-2160p', 1);
-INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('SweatyEgg69 Movies [EN]', '2160p', 'Bluray-2160p', 2);
+INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', '2160p', 'Bluray-2160p', 0);
+INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', '2160p', 'WEBDL-2160p', 1);
+INSERT OR IGNORE INTO "quality_group_members" ("quality_profile_name", "quality_group_name", "quality_name", "position") VALUES ('Movies 2160p [EN]', '2160p', 'WEBRip-2160p', 2);
 
 -- [fr] quality_profile_qualities
 -- quality_profile_qualities: 236 rows
@@ -508,7 +502,7 @@ INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "qual
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Anime 1080p VOSTFR [FR]', 'Unknown', NULL, 130, 0, 0);
 
 -- [dumpstarr] quality_profile_qualities
--- quality_profile_qualities: 174 rows
+-- quality_profile_qualities: 168 rows
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('LQ 1080p [EN]', NULL, '1080p', 0, 1, 1);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('LQ 1080p [EN]', NULL, '720p', 1, 1, 0);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('LQ 1080p [EN]', NULL, '480p', 2, 1, 0);
@@ -520,12 +514,10 @@ INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "qual
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 1080p [EN]', NULL, 'WEB-1080p', 1, 1, 0);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 1080p [EN]', 'Bluray-720p', NULL, 2, 1, 0);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 1080p [EN]', NULL, 'WEB-720p', 3, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Bluray-2160p', NULL, 0, 1, 1);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', NULL, 'WEB-2160p', 1, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Bluray-1080p', NULL, 2, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', NULL, 'WEB-1080p', 3, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Bluray-720p', NULL, 4, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', NULL, 'WEB-720p', 5, 1, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Bluray-1080p', NULL, 1, 1, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', NULL, 'WEB-1080p', 2, 1, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Bluray-720p', NULL, 3, 1, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', NULL, 'WEB-720p', 4, 1, 0);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('TV 1080p [EN]', NULL, 'WEB 1080p', 0, 1, 1);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('TV 1080p [EN]', 'Bluray-1080p', NULL, 1, 1, 0);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('TV 1080p [EN]', 'HDTV-1080p', NULL, 6, 0, 0);
@@ -656,33 +648,29 @@ INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "qual
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 1080p HQ [EN]', 'WEBDL-480p', NULL, 24, 0, 0);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 1080p HQ [EN]', 'WEBRip-480p', NULL, 25, 0, 0);
 INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 1080p HQ [EN]', 'WORKPRINT', NULL, 26, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Bluray-1080p', NULL, 1, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', NULL, 'WEB-1080p', 2, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Bluray-720p', NULL, 3, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', NULL, 'WEB-720p', 4, 1, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', NULL, '2160p', 0, 1, 1);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Bluray-480p', NULL, 5, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Bluray-576p', NULL, 6, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'BR-DISK', NULL, 7, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'CAM', NULL, 8, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'DVD', NULL, 9, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'DVD-R', NULL, 10, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'DVDSCR', NULL, 11, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'HDTV-1080p', NULL, 12, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'HDTV-2160p', NULL, 13, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'HDTV-480p', NULL, 14, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'HDTV-720p', NULL, 15, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Raw-HD', NULL, 16, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'REGIONAL', NULL, 17, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Remux-1080p', NULL, 18, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Remux-2160p', NULL, 19, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'SDTV', NULL, 20, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'TELECINE', NULL, 21, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'TELESYNC', NULL, 22, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'Unknown', NULL, 23, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'WEBDL-480p', NULL, 24, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'WEBRip-480p', NULL, 25, 0, 0);
-INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('SweatyEgg69 Movies [EN]', 'WORKPRINT', NULL, 26, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', NULL, '2160p', 0, 1, 1);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Bluray-480p', NULL, 5, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Bluray-576p', NULL, 6, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'BR-DISK', NULL, 7, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'CAM', NULL, 8, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'DVD', NULL, 9, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'DVD-R', NULL, 10, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'DVDSCR', NULL, 11, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'HDTV-1080p', NULL, 12, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'HDTV-2160p', NULL, 13, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'HDTV-480p', NULL, 14, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'HDTV-720p', NULL, 15, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Raw-HD', NULL, 16, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'REGIONAL', NULL, 17, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Remux-1080p', NULL, 18, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Remux-2160p', NULL, 19, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'SDTV', NULL, 20, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'TELECINE', NULL, 21, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'TELESYNC', NULL, 22, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'Unknown', NULL, 23, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'WEBDL-480p', NULL, 24, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'WEBRip-480p', NULL, 25, 0, 0);
+INSERT OR IGNORE INTO "quality_profile_qualities" ("quality_profile_name", "quality_name", "quality_group_name", "position", "enabled", "upgrade_until") VALUES ('Movies 2160p [EN]', 'WORKPRINT', NULL, 26, 0, 0);
 
 -- [fr] quality_profile_languages
 -- quality_profile_languages: 14 rows
@@ -702,7 +690,7 @@ INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "lang
 INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('2160p Compact [FR]', 'Any', 'simple');
 
 -- [dumpstarr] quality_profile_languages
--- quality_profile_languages: 9 rows
+-- quality_profile_languages: 8 rows
 INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('LQ 1080p [EN]', 'Original', 'must');
 INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('Anime 1080p [EN]', 'Original', 'simple');
 INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('Movies 1080p [EN]', 'Original', 'must');
@@ -711,7 +699,6 @@ INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "lang
 INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('TV 1080p [EN]', 'Original', 'must');
 INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('TV 2160p [EN]', 'Original', 'must');
 INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('Movies 1080p HQ [EN]', 'Original', 'simple');
-INSERT OR IGNORE INTO "quality_profile_languages" ("quality_profile_name", "language_name", "type") VALUES ('SweatyEgg69 Movies [EN]', 'Original', 'simple');
 
 -- [fr] quality_profile_custom_formats
 -- quality_profile_custom_formats: 1728 rows
@@ -2445,7 +2432,7 @@ INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", 
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('2160p Compact [FR]', '2160p Compact Episode Size > 5 GiB [FR]', 'sonarr', -700);
 
 -- [dumpstarr] quality_profile_custom_formats
--- quality_profile_custom_formats: 584 rows
+-- quality_profile_custom_formats: 523 rows
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'Accessibility [EN]', 'all', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Multi-Audio [EN]', 'all', 101);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Anime 1080p [EN]', 'Multi-Sub [EN]', 'all', 101);
@@ -2968,68 +2955,7 @@ INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", 
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'HONE (Bad Name) [EN]', 'radarr', -10000);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'x265 [EN]', 'radarr', 1);
 INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('LQ 1080p [EN]', 'x265 [EN]', 'sonarr', 1);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', '3D [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', '4K Remaster [EN]', 'radarr', 25);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', '5.1 [EN]', 'radarr', 5);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', '7.1 [EN]', 'radarr', 10);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'AAC [EN]', 'radarr', 10);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'AMZN [EN]', 'radarr', 10);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'ATVP [EN]', 'radarr', 25);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'AV1 [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Accessibility [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Atmos [EN]', 'radarr', 25);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'B&W [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'BCORE [EN]', 'radarr', 25);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'BHDStudio [EN]', 'radarr', 550);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'BR-DISK [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Bad Source [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Baseline Groups [EN]', 'radarr', 500);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'CRIT [EN]', 'radarr', 50);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'DSNP [EN]', 'radarr', 50);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'DTS-HD HRA [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'DTS-HD MA [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'DTS-X [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Dolby Digital [EN]', 'radarr', 115);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Dolby Digital + [EN]', 'radarr', 125);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Dolby Vision [EN]', 'radarr', 1000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Dolby Vision (No HDR Fallback) [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Dumpstarr LQ Groups [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Dumpstarr LQ Title [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Extras [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Fake HDR [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Group Missing [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'HD Bluray Tier 01 [EN]', 'radarr', 1700);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'HD Bluray Tier 02 [EN]', 'radarr', 1650);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'HD Bluray Tier 03 [EN]', 'radarr', 1600);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'HDR [EN]', 'radarr', 500);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'HDR10+ [EN]', 'radarr', 100);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'HMAX [EN]', 'radarr', 25);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'HONE (Bad Name) [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'LQ [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'LQ Release Title [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'MA [EN]', 'radarr', 75);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'MAX [EN]', 'radarr', 25);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'NF [EN]', 'radarr', 10);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'No Audio [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'ProRes [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Remaster [EN]', 'radarr', 25);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Repack1 [EN]', 'radarr', 5);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Repack2 [EN]', 'radarr', 6);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Repack3 [EN]', 'radarr', 7);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Sing Along [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Special Edition [EN]', 'radarr', 125);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'TrueHD [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'TrueHD Missing [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'UHD Bluray Tier 01 [EN]', 'radarr', 1900);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'UHD Bluray Tier 02 [EN]', 'radarr', 1850);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'UHD Bluray Tier 03 [EN]', 'radarr', 1800);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'Upscaled [EN]', 'radarr', -10000);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'WEB Tier 01 [EN]', 'radarr', 1500);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'WEB Tier 02 [EN]', 'radarr', 1450);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'WEB Tier 03 [EN]', 'radarr', 1400);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'hallowed [EN]', 'radarr', 600);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'iT [EN]', 'radarr', 50);
-INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('SweatyEgg69 Movies [EN]', 'MA Preferred [EN]', 'radarr', 2000);
+INSERT OR IGNORE INTO "quality_profile_custom_formats" ("quality_profile_name", "custom_format_name", "arr_type", "score") VALUES ('Movies 2160p [EN]', 'MA Preferred [EN]', 'radarr', 2000);
 
 -- [fr] quality_profile_tags
 -- quality_profile_tags: 87 rows
@@ -3122,7 +3048,7 @@ INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name"
 INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('2160p Compact [FR]', 'x265');
 
 -- [dumpstarr] quality_profile_tags
--- quality_profile_tags: 24 rows
+-- quality_profile_tags: 21 rows
 INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('LQ 1080p [EN]', '1080p');
 INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('LQ 1080p [EN]', 'LQ');
 INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('Anime 1080p [EN]', 'Anime');
@@ -3143,10 +3069,7 @@ INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name"
 INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('TV 2160p [EN]', 'Sonarr');
 INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('Movies 1080p HQ [EN]', 'Radarr');
 INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('Movies 1080p HQ [EN]', '1080p');
-INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('SweatyEgg69 Movies [EN]', '2160p');
-INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('SweatyEgg69 Movies [EN]', 'Radarr');
-INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('SweatyEgg69 Movies [EN]', 'Streaming Optimized');
-INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('SweatyEgg69 Movies [EN]', 'MA');
+INSERT OR IGNORE INTO "quality_profile_tags" ("quality_profile_name", "tag_name") VALUES ('Movies 2160p [EN]', 'MA');
 
 -- [fr] custom_format_tags
 -- custom_format_tags: 377 rows

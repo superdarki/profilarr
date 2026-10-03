@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 4.quality_profiles.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_profiles
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=69e97ab6(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=fc0c68ad(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -135,7 +135,7 @@ avec des fichiers plus légers.
 Fallback 1080p Efficient x265, avec une échelle de score basée sur la taille des releases.', 1, 20000, 1000000, 1);
 
 -- [dumpstarr] quality_profiles
--- quality_profiles: 9 rows
+-- quality_profiles: 8 rows
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('LQ 1080p [EN]', '- This profile is for **SIDCA** (Sh*t I Don''t Care About). The primary tier and LQ groups are not scored to allow "low quality" releases. For example, user requests "Keeping Up with the Kardashians" and you would prefer to save as much storage space as humanly possible so this user can watch this "show". This profile works great on animated series.
 - You can expect to grab **MeGusta** or **iVy** releases 99% of the time.
 - AV1 and x265 codecs are allowed.', 1, 25, 10000, 1);
@@ -147,7 +147,8 @@ INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allow
 - This profile will prefer streaming optimized releases groups like **BHDStudio** and **hallowed**.
 - This profile does not allow releases with HD Audio to ensure direct-play compatibility.', 1, 750, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Movies 2160p [EN]', 'This profile focuses on streaming optimized sources with little to no transcoding needed and is recommended for the average user or if you **do not** use a dedicated streaming box. (i.e. AppleTV, NVIDIA Shield, etc)
-- This profile will prefer streaming optimized releases groups like **BHDStudio** and **hallowed**.
+- This profile prefers MA (Movies Anywhere) WEB-DL releases from tiered groups that contain HDR and Dolby Digital +.
+- This profile will fallback to streaming optimized releases groups like **BHDStudio** and **hallowed**.
 - This profile does not allow releases with HD Audio to ensure direct-play compatibility.
 - Releases without HDR fallback will be scored negatively to ensure playability across platforms.', 1, 1000, 10000, 1);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Movies 2160p HQ [EN]', 'This profile follows the same sort of logic like the TRaSH SQP-4 MA Hybrid Profile. This results in higher-quality, WEB releases being preferred. This usually results in higher-quality audio, higher video bitrates and 30% larger file size.
@@ -168,10 +169,4 @@ INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allow
 - This profile allows releases with **HDR** and **Dolby Vision**.
 - This profile will allow HD audio like TrueHD, DTS-X, etc but only if the source is WEB-DL.
 - Releases **without** HDR fallback are not allowed.', 1, 500, 10000, 1);
-INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('SweatyEgg69 Movies [EN]', 'This profile focuses on streaming optimized sources with little to no transcoding needed and is recommended for the average user or if you **do not** use a dedicated streaming box. (i.e. AppleTV, NVIDIA Shield, etc)
-- This profile uses the preferred settings for SweatyEggs69.
-- This profile prefers MA (Movies Anywhere) WEB-DL releases from tiered groups that contain HDR and Dolby Digital +.
-- This profile will fallback to streaming optimized releases groups like **BHDStudio** and **hallowed**.
-- This profile does not allow releases with HD Audio to ensure direct-play compatibility.
-- Releases without HDR fallback will be scored negatively to ensure playability across platforms.', 1, 1000, 10000, 1);
 
