@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 0.tags-qualities-languages.sql — merged Profilarr v2 (superdarki/profilarr) — tables: tags, languages, qualities
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=e6f22899(ns= [EN])
+-- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=061e2751(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
