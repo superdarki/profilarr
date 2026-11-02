@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=d1693be0(ns= [EN])
+-- schema e1c2bd73 | sources: fr=a2daa842(ns= [FR]); dumpstarr=d1693be0(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -9,7 +9,7 @@
 PRAGMA foreign_keys = OFF;
 
 -- [fr] custom_format_conditions
--- custom_format_conditions: 1860 rows
+-- custom_format_conditions: 1874 rows
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', '1080p', 'resolution', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Bluray', 'source', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Not Remux', 'release_title', 'all', 1, 1);
@@ -1613,7 +1613,6 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 4 [FR]', 'HERC', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 4 [FR]', 'HOLiDAYS', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 4 [FR]', 'HYBRiS', 'release_group', 'all', 0, 0);
-INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 3 [FR]', 'HYPERION', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 3 [FR]', 'HazzAnim', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 1 [FR]', 'HeavyWeight', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 4 [FR]', 'HiRoSHiMa', 'release_group', 'all', 0, 0);
@@ -1870,6 +1869,21 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2160p Compact Episode Size 3-5 GiB [FR]', 'Not Season Pack', 'release_type', 'sonarr', 1, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2160p Compact Season Pack Size > 50 GiB [FR]', 'Season Pack', 'release_type', 'sonarr', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2160p Compact Episode Size > 5 GiB [FR]', 'Not Season Pack', 'release_type', 'sonarr', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray HEVC [FR]', 'Not HDLight', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray AVC [FR]', 'Not HDLight', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray HEVC [FR]', 'Not AVC', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p WEB-DL HEVC [FR]', 'Not AVC', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2160p Bluray HEVC [FR]', 'Not AVC', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('2160p WEB-DL HEVC [FR]', 'Not AVC', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Dubbed [FR]', 'Dubbed', 'release_title', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French Original [FR]', 'Not Dubbed', 'release_title', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Freeleech [FR]', 'Freeleech', 'indexer_flag', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Halfleech [FR]', 'Halfleech', 'indexer_flag', 'all', 0, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Halfleech [FR]', 'Not Freeleech', 'indexer_flag', 'all', 1, 1);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 2 [FR]', 'HYPERION', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'Xavy', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Xavy', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Xavy', 'release_group', 'all', 0, 0);
 
 -- [dumpstarr] custom_format_conditions
 -- custom_format_conditions: 927 rows
@@ -2802,7 +2816,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Upscaled [EN]', 'AI Upscales (Sonarr)', 'release_title', 'sonarr', 0, 0);
 
 -- [fr] condition_patterns
--- condition_patterns: 1628 rows
+-- condition_patterns: 1639 rows
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Bluray [FR]', 'Not Remux', 'Remux [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p HDTV [FR]', 'HDTV Regex', 'HDTV [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Remux [FR]', 'Remux', 'Remux [FR]');
@@ -4244,7 +4258,6 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 4 [FR]', 'HERC', 'HERC [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 4 [FR]', 'HOLiDAYS', 'HOLiDAYS [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 4 [FR]', 'HYBRiS', 'HYBRiS [FR]');
-INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 3 [FR]', 'HYPERION', 'HYPERION [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 3 [FR]', 'HazzAnim', 'HazzAnim [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 1 [FR]', 'HeavyWeight', 'HeavyWeight [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 4 [FR]', 'HiRoSHiMa', 'HiRoSHiMa [FR]');
@@ -4431,6 +4444,18 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 3 [FR]', 'matheousse', 'matheousse [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 2 [FR]', 'pERsO', 'pERsO [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 4 [FR]', 'tFR', 'tFR [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Bluray HEVC [FR]', 'Not HDLight', 'HDLight [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Bluray AVC [FR]', 'Not HDLight', 'HDLight [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Bluray HEVC [FR]', 'Not AVC', 'AVC [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p WEB-DL HEVC [FR]', 'Not AVC', 'AVC [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2160p Bluray HEVC [FR]', 'Not AVC', 'AVC [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('2160p WEB-DL HEVC [FR]', 'Not AVC', 'AVC [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('Dubbed [FR]', 'Dubbed', 'Dubbed [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French Original [FR]', 'Not Dubbed', 'Dubbed [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 2 [FR]', 'HYPERION', 'HYPERION [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'Xavy', 'Xavy [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Xavy', 'Xavy [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Xavy', 'Xavy [FR]');
 
 -- [dumpstarr] condition_patterns
 -- condition_patterns: 785 rows
@@ -5238,6 +5263,12 @@ INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_na
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Not German or English [EN]', 'Not English', 'English', 0);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Not German or English [EN]', 'Not German', 'German', 0);
 INSERT OR IGNORE INTO "condition_languages" ("custom_format_name", "condition_name", "language_name", "except_language") VALUES ('Not Original Language [EN]', 'Not Original', 'Original', 0);
+
+-- [fr] condition_indexer_flags
+-- condition_indexer_flags: 3 rows
+INSERT OR IGNORE INTO "condition_indexer_flags" ("custom_format_name", "condition_name", "flag") VALUES ('Freeleech [FR]', 'Freeleech', 'freeleech');
+INSERT OR IGNORE INTO "condition_indexer_flags" ("custom_format_name", "condition_name", "flag") VALUES ('Halfleech [FR]', 'Halfleech', 'halfleech');
+INSERT OR IGNORE INTO "condition_indexer_flags" ("custom_format_name", "condition_name", "flag") VALUES ('Halfleech [FR]', 'Not Freeleech', 'freeleech');
 
 -- [fr] condition_quality_modifiers
 -- condition_quality_modifiers: 2 rows

@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 4.quality_profiles.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_profiles
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=d1693be0(ns= [EN])
+-- schema e1c2bd73 | sources: fr=a2daa842(ns= [FR]); dumpstarr=d1693be0(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -18,7 +18,7 @@ la source de streaming et les formats audio pour estimer le niveau de transparen
 - Taille moyenne série ~ 2 à 4 Go par épisode
 - Classement qualité série ~ 7/10
 
-Fallback HDLight x264 et 720p, sans x265 pour la compatibilité ni Blu-ray pour limiter l''espace.', 1, 20000, 1000000, 1);
+Fallback HDLight x264 et 720p, sans x265 pour la compatibilité ni Blu-ray pour limiter l''espace.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('1080p Compact [FR]', '1080p Compact FR cible des encodes Blu-ray et WEB x265 de qualité faible à moyenne,
 avec des fichiers plus légers.
 
@@ -27,7 +27,7 @@ avec des fichiers plus légers.
 - Taille moyenne série ~ 1 à 2 Go par épisode
 - Classement qualité série ~ 4/10
 
-Fallback Efficient x265 et 720p, avec une échelle de score basée sur la taille des releases.', 1, 20000, 1000000, 1);
+Fallback Efficient x265 et 720p, avec une échelle de score basée sur la taille des releases.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('1080p Efficient [FR]', '1080p Efficient FR cible des encodes Blu-ray et WEB x265 de bonne qualité, avec
 un bon compromis entre taille et rendu.
 
@@ -36,7 +36,7 @@ un bon compromis entre taille et rendu.
 - Taille moyenne série ~ 2 à 3 Go par épisode
 - Classement qualité série ~ 6/10
 
-Fallback HDLight x265, puis WEB et Blu-ray x264.', 1, 20000, 1000000, 1);
+Fallback HDLight x265, puis WEB et Blu-ray x264.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('1080p Quality [FR]', '1080p Quality FR utilise le [**Golden Popcorn Performance Index**](https://dictionarry.dev/wiki/gppi)
 pour cibler des encodes x264 1080p **transparents**.
 
@@ -45,7 +45,7 @@ pour cibler des encodes x264 1080p **transparents**.
 - Taille moyenne série ~ 4 à 8 Go par épisode
 - Classement qualité série ~ 8/10
 
-Fallback Balanced et 720p, uniquement en x264 pour préserver la compatibilité client sans transcodage.', 1, 20000, 1000000, 1);
+Fallback Balanced et 720p, uniquement en x264 pour préserver la compatibilité client sans transcodage.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('1080p Quality HDR [FR]', '1080p Quality HDR FR utilise le [**Golden Popcorn Performance Index**](https://dictionarry.dev/wiki/gppi)
 pour cibler des encodes x265 HDR 1080p **transparents**.
 
@@ -54,7 +54,7 @@ pour cibler des encodes x265 HDR 1080p **transparents**.
 - Taille moyenne série ~ 4 à 10 Go par épisode
 - Classement qualité série ~ 9/10
 
-x265 est accepté uniquement avec HDR afin d''éviter les réencodes x265 de sources x264.', 1, 20000, 1000000, 1);
+x265 est accepté uniquement avec HDR afin d''éviter les réencodes x265 de sources x264.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('1080p Remux [FR]', '1080p Remux FR utilise les **formats audio** pour prioriser les Blu-ray HD
 lossless de haute qualité, avec un repli vers des encodes Blu-ray transparents.
 
@@ -63,7 +63,7 @@ lossless de haute qualité, avec un repli vers des encodes Blu-ray transparents.
 - Taille moyenne série ~ 6 à 12 Go par épisode
 - Classement qualité série ~ 10/10
 
-Fallback Quality, puis Balanced.', 1, 20000, 1000000, 1);
+Fallback Quality, puis Balanced.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('2160p Balanced [FR]', '2160p Balanced FR cible des **WEB-DL 2160p avec audio lossy** fiables et stables.
 
 - Taille moyenne film ~ 15 à 30 Go par film
@@ -71,7 +71,7 @@ INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allow
 - Taille moyenne série ~ 5 à 15 Go par épisode
 - Classement qualité série ~ 8/10
 
-Fallback Quality 1080p, sans Blu-ray 2160p.', 1, 20000, 1000000, 1);
+Fallback Quality 1080p, sans Blu-ray 2160p.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('2160p Efficient [FR]', '2160p Efficient FR cible des **WEB-DL 2160p avec audio lossy** fiables et stables,
 avec un repli spécialisé vers 1080p Efficient.
 
@@ -80,7 +80,7 @@ avec un repli spécialisé vers 1080p Efficient.
 - Taille moyenne série ~ 4 à 12 Go par épisode
 - Classement qualité série ~ 6/10
 
-Fallback Efficient 1080p, sans Blu-ray 2160p.', 1, 20000, 1000000, 1);
+Fallback Efficient 1080p, sans Blu-ray 2160p.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('2160p Quality [FR]', '2160p Quality FR utilise l''indice [**Encode Efficiency Index**](https://dictionarry.dev/wiki/eei)
 avec un ratio cible de 60 % pour prioriser des encodes x265 4K **transparents**.
 
@@ -89,7 +89,7 @@ avec un ratio cible de 60 % pour prioriser des encodes x265 4K **transparents**.
 - Taille moyenne série ~ 10 à 20 Go par épisode
 - Classement qualité série ~ 9/10
 
-Fallback Quality 1080p, avec Blu-ray et WEB-DL 2160p sans concession.', 1, 20000, 1000000, 1);
+Fallback Quality 1080p, avec Blu-ray et WEB-DL 2160p sans concession.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('2160p Remux [FR]', '2160p Remux FR utilise les **formats vidéo et audio** pour prioriser les copies
 lossless de haute qualité issues de Blu-ray UHD.
 
@@ -98,14 +98,14 @@ lossless de haute qualité issues de Blu-ray UHD.
 - Taille moyenne série ~ 15 à 30 Go par épisode
 - Classement qualité série ~ 10/10
 
-Fallback Quality 2160p, sans concession.', 1, 20000, 1000000, 1);
+Fallback Quality 2160p, sans concession.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('720p Quality [FR]', '720p Quality FR utilise le [**Golden Popcorn Performance Index**](https://dictionarry.dev/wiki/gppi)
 pour cibler des encodes x264 720p **transparents**.
 
 - Taille moyenne film ~ 4 a 8 Go par film
 - Classement qualite film ~ 5/10
 - Taille moyenne serie ~ 2 a 4 Go par episode
-- Classement qualite serie ~ 5/10', 1, 20000, 1000000, 1);
+- Classement qualite serie ~ 5/10', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p [FR]', 'Anime 1080p FR cible des releases anime 1080p de qualité en combinant
 les sources techniques de Dictionarry avec les tiers de teams Anime FR.
 
@@ -114,7 +114,7 @@ les sources techniques de Dictionarry avec les tiers de teams Anime FR.
 - Rejette VFQ, les groupes de faible qualité et les releases sans marqueur français explicite
 - Utilise une échelle maximale de 1 000 000 points comme les autres profils FR
 
-Aucune préférence entre x264 et x265, avec un compromis entre Efficient et Quality.', 1, 20000, 1000000, 1);
+Aucune préférence entre x264 et x265, avec un compromis entre Efficient et Quality.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('Anime 1080p VOSTFR [FR]', 'Anime 1080p VOSTFR FR reprend le même socle technique et les mêmes
 tiers de teams que le profil Anime 1080p FR, mais impose strictement la VOSTFR.
 
@@ -123,7 +123,7 @@ tiers de teams que le profil Anime 1080p FR, mais impose strictement la VOSTFR.
 - Rejette MULTi, VF, VFQ, French Original et les releases sans marqueur français explicite
 - Utilise une échelle maximale de 1 000 000 points comme les autres profils FR
 
-Logique identique à Anime 1080p FR, sans audio français.', 1, 20000, 1000000, 1);
+Logique identique à Anime 1080p FR, sans audio français.', 1, 20000, 1000000, 5);
 INSERT OR IGNORE INTO "quality_profiles" ("name", "description", "upgrades_allowed", "minimum_custom_format_score", "upgrade_until_score", "upgrade_score_increment") VALUES ('2160p Compact [FR]', '2160p Compact FR cible des encodes Blu-ray x265 de type 4KLight,
 avec des fichiers plus légers.
 
@@ -132,7 +132,7 @@ avec des fichiers plus légers.
 - Taille moyenne série ~ 3 à 6 Go par épisode
 - Classement qualité série ~ 5/10
 
-Fallback 1080p Efficient x265, avec une échelle de score basée sur la taille des releases.', 1, 20000, 1000000, 1);
+Fallback 1080p Efficient x265, avec une échelle de score basée sur la taille des releases.', 1, 20000, 1000000, 5);
 
 -- [dumpstarr] quality_profiles
 -- quality_profiles: 8 rows

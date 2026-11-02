@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 2.custom_formats.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_formats
--- schema e1c2bd73 | sources: fr=1608a48b(ns= [FR]); dumpstarr=d1693be0(ns= [EN])
+-- schema e1c2bd73 | sources: fr=a2daa842(ns= [FR]); dumpstarr=d1693be0(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -9,7 +9,7 @@
 PRAGMA foreign_keys = OFF;
 
 -- [fr] custom_formats
--- custom_formats: 172 rows
+-- custom_formats: 175 rows
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Bluray [FR]', 'Matches 1080p Blurays that are NOT remuxes', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p HDTV [FR]', 'Matches 1080p HDTV.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('1080p Remux [FR]', 'Matches 1080p Remux', 0);
@@ -224,6 +224,9 @@ INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_renam
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Episode Size 3-5 GiB [FR]', 'Matches non-season-pack Sonarr 2160p releases over 3 GiB and up to 5 GiB.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Season Pack Size > 50 GiB [FR]', 'Matches Sonarr 2160p season packs over 50 GiB.', 0);
 INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('2160p Compact Episode Size > 5 GiB [FR]', 'Matches non-season-pack Sonarr 2160p releases over 5 GiB.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Dubbed [FR]', 'Identifie les releases explicitement marquees DUB, DUBBED ou ENGLISH apres une annee ou un marqueur de saison.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Freeleech [FR]', 'Identifie les releases signalees Freeleech par l''indexeur afin de les departager a qualite egale.', 0);
+INSERT OR IGNORE INTO "custom_formats" ("name", "description", "include_in_rename") VALUES ('Halfleech [FR]', 'Identifie les releases signalees Halfleech par l''indexeur afin de les departager a qualite egale.', 0);
 
 -- [dumpstarr] custom_formats
 -- custom_formats: 146 rows
