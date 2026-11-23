@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 6.links-and-tags.sql — merged Profilarr v2 (superdarki/profilarr) — tables: quality_group_members, quality_profile_qualities, quality_profile_languages, quality_profile_custom_formats, quality_profile_tags, custom_format_tags, regular_expression_tags
--- schema e1c2bd73 | sources: fr=a2daa842(ns= [FR]); dumpstarr=23872902(ns= [EN])
+-- schema e1c2bd73 | sources: fr=305a200b(ns= [FR]); dumpstarr=23872902(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -3715,7 +3715,7 @@ INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VA
 INSERT OR IGNORE INTO "custom_format_tags" ("custom_format_name", "tag_name") VALUES ('IMF [EN]', 'Streaming Service');
 
 -- [fr] regular_expression_tags
--- regular_expression_tags: 1403 rows
+-- regular_expression_tags: 1405 rows
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('3D [FR]', 'Banned');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('3D [FR]', 'Enhancement');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('4FR [FR]', 'French');
@@ -5119,6 +5119,8 @@ INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('Dubbed [FR]', 'Language');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('Xavy [FR]', 'French');
 INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('Xavy [FR]', 'Release Group');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('MTLQC [FR]', 'French');
+INSERT OR IGNORE INTO "regular_expression_tags" ("regular_expression_name", "tag_name") VALUES ('MTLQC [FR]', 'Release Group');
 
 -- [dumpstarr] regular_expression_tags
 -- regular_expression_tags: 1423 rows

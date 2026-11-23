@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 5.conditions.sql — merged Profilarr v2 (superdarki/profilarr) — tables: custom_format_conditions, condition_patterns, condition_languages, condition_indexer_flags, condition_quality_modifiers, condition_release_types, condition_resolutions, condition_sizes, condition_sources, condition_years
--- schema e1c2bd73 | sources: fr=a2daa842(ns= [FR]); dumpstarr=23872902(ns= [EN])
+-- schema e1c2bd73 | sources: fr=305a200b(ns= [FR]); dumpstarr=23872902(ns= [EN])
 -- GENERATED — do not edit by hand (rebuilt by .gitea/scripts/build_merged.py).
 -- Deterministic: output depends only on upstream commit shas (no timestamps),
 -- so the CI commits only when an upstream actually changed.
@@ -9,7 +9,7 @@
 PRAGMA foreign_keys = OFF;
 
 -- [fr] custom_format_conditions
--- custom_format_conditions: 1874 rows
+-- custom_format_conditions: 1877 rows
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', '1080p', 'resolution', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Bluray', 'source', 'all', 0, 1);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('1080p Bluray [FR]', 'Not Remux', 'release_title', 'all', 1, 1);
@@ -1884,6 +1884,9 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR LQ [FR]', 'Xavy', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Xavy', 'release_group', 'all', 0, 0);
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Xavy', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('FR Team Tier 3 [FR]', 'MTLQC', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MTLQC', 'release_group', 'all', 0, 0);
+INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MTLQC', 'release_group', 'all', 0, 0);
 
 -- [dumpstarr] custom_format_conditions
 -- custom_format_conditions: 927 rows
@@ -2816,7 +2819,7 @@ INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", 
 INSERT OR IGNORE INTO "custom_format_conditions" ("custom_format_name", "name", "type", "arr_type", "negate", "required") VALUES ('Upscaled [EN]', 'AI Upscales (Sonarr)', 'release_title', 'sonarr', 0, 0);
 
 -- [fr] condition_patterns
--- condition_patterns: 1639 rows
+-- condition_patterns: 1642 rows
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Bluray [FR]', 'Not Remux', 'Remux [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p HDTV [FR]', 'HDTV Regex', 'HDTV [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('1080p Remux [FR]', 'Remux', 'Remux [FR]');
@@ -4456,6 +4459,9 @@ INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_nam
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR LQ [FR]', 'Xavy', 'Xavy [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'Xavy', 'Xavy [FR]');
 INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'Xavy', 'Xavy [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('FR Team Tier 3 [FR]', 'MTLQC', 'MTLQC [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MULTi + Team FR (INTL) [FR]', 'MTLQC', 'MTLQC [FR]');
+INSERT OR IGNORE INTO "condition_patterns" ("custom_format_name", "condition_name", "regular_expression_name") VALUES ('French MultiSub + Team FR (INTL) [FR]', 'MTLQC', 'MTLQC [FR]');
 
 -- [dumpstarr] condition_patterns
 -- condition_patterns: 785 rows
@@ -5404,28 +5410,28 @@ INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name",
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Movie Size 6-8 GiB [FR]', 'Size', 6442450945, 8589934592);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Movie Size 8-10 GiB [FR]', 'Size', 8589934593, 10737418240);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Movie Size 10-15 GiB [FR]', 'Size', 10737418241, 16106127360);
-INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Movie Size > 15 GiB [FR]', 'Size', 16106127361, NULL);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size 6-8 GiB [FR]', 'Size', 6442450945, 8589934592);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size 8-10 GiB [FR]', 'Size', 8589934593, 10737418240);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size 10-12 GiB [FR]', 'Size', 10737418241, 12884901888);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size 12-15 GiB [FR]', 'Size', 12884901889, 16106127360);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size 15-18 GiB [FR]', 'Size', 16106127361, 19327352832);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size 18-25 GiB [FR]', 'Size', 19327352833, 26843545600);
-INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size > 25 GiB [FR]', 'Size', 26843545601, NULL);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Episode Size <= 800 MiB [FR]', 'Size', NULL, 838860800);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Season Pack Size 10-20 GiB [FR]', 'Size', 10737418241, 21474836480);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Episode Size 800 MiB-1.2 GiB [FR]', 'Size', 838860801, 1288490189);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Season Pack Size 20-35 GiB [FR]', 'Size', 21474836481, 37580963840);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Episode Size 1.2-2 GiB [FR]', 'Size', 1288490190, 2147483648);
-INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Season Pack Size > 35 GiB [FR]', 'Size', 37580963841, NULL);
-INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Episode Size > 2 GiB [FR]', 'Size', 2147483649, NULL);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Episode Size <= 2 GiB [FR]', 'Size', NULL, 2147483648);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Season Pack Size 20-30 GiB [FR]', 'Size', 21474836481, 32212254720);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Episode Size 2-3 GiB [FR]', 'Size', 2147483649, 3221225472);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Season Pack Size 30-50 GiB [FR]', 'Size', 32212254721, 53687091200);
 INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Episode Size 3-5 GiB [FR]', 'Size', 3221225473, 5368709120);
-INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Season Pack Size > 50 GiB [FR]', 'Size', 53687091201, NULL);
-INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Episode Size > 5 GiB [FR]', 'Size', 5368709121, NULL);
+INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Season Pack Size > 50 GiB [FR]', 'Size', 53687091201, 1099511627776);
+INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Movie Size > 25 GiB [FR]', 'Size', 26843545601, 1099511627776);
+INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('2160p Compact Episode Size > 5 GiB [FR]', 'Size', 5368709121, 1099511627776);
+INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Season Pack Size > 35 GiB [FR]', 'Size', 37580963841, 1099511627776);
+INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Episode Size > 2 GiB [FR]', 'Size', 2147483649, 1099511627776);
+INSERT OR IGNORE INTO "condition_sizes" ("custom_format_name", "condition_name", "min_bytes", "max_bytes") VALUES ('1080p Compact Movie Size > 15 GiB [FR]', 'Size', 16106127361, 1099511627776);
 
 -- [fr] condition_sources
 -- condition_sources: 98 rows
